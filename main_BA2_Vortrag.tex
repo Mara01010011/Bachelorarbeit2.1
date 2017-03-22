@@ -1,4 +1,4 @@
-\documentclass[english,ph]{URbeamer}
+\documentclass[english,ph,handout]{URbeamer}
 
 \usepackage{babel}
 \usepackage[utf8]{inputenc}
@@ -9,17 +9,30 @@
 \usepackage{amsmath}
 \usepackage{multimedia}
 \usepackage[ugly]{units}
+%\usepackage{placeins}
+\usepackage[backend=bibtex, style=numeric-comp, sorting=nty]{biblatex}
+\addbibresource{bib.bib}
 
 \newcommand{\diff}{\mathrm{d}}
+
 \setbeameroption{show notes}
+\let\orignote\note
+%\renewcommand{\note}[1]{\orignote{
+%		\begin{minipage}{\textwidth}
+%			#1
+%		\end{minipage}
+%	}}
+\renewcommand{\note}[1]{\orignote{\scriptsize{
+			#1
+			}}}
 
 \title{Evolution of topological surface states of thin HgTe-films with film thickness}
 \institute{Fakultät für Physik}
-\subtitle{Bachelorthesis}
+\subtitle{Bachelor thesis}
 \author{Tamara Szecsey}
 
 \begin{document}
-	\frame[plain]{\titlepage \note{Hello, my name is Tamara Szecsey and I will now give you a talk about my bachelorthesis topic, the evolution of topological surface states of thin HgTe-films with film thickness.}}
+	\frame[plain]{\titlepage \note{Hello, my name is Tamara Szecsey and I will now give you a talk about my bachelor thesis topic, the evolution of topological surface states of thin HgTe-films with film thickness.}}
 	
 %	\begin{frame}
 %		\maketitle
@@ -29,14 +42,13 @@
 %%%			\end{center}
 %%		\end{figure}
 %	\end{frame}
-	\input{introduction_vortrag}
 	
 	\begin{frame}{Table of contents}
 		\tableofcontents
 	\end{frame}
 	
+	\input{introduction_vortrag}
 	
-	\section{Theory}
 	\input{theory_vortrag}
 	
 	\section{Results}

@@ -1,6 +1,13 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
 \beamer@endinputifotherversion {3.36pt}
+\defcounter {refsection}{0}\relax 
 \select@language {english}
-\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {1}{Introduction}{4}{0}{1}
+\defcounter {refsection}{0}\relax 
 \beamer@sectionintoc {2}{Theory}{6}{0}{2}
-\beamer@sectionintoc {3}{Results}{7}{0}{3}
-\beamer@sectionintoc {4}{Conclusion}{8}{0}{4}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {3}{Results}{10}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {4}{Conclusion}{11}{0}{4}

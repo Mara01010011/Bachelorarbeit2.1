@@ -39,7 +39,7 @@
   Timestamp                = {2017.02.01}
 }
 
-@Misc{,
+@Misc{Kohn,
   Author                   = {W. Kohn et al.},
 
   Owner                    = {tamara},
@@ -109,6 +109,7 @@
 }
 
 @Article{top_surf_states,
+  Title                    = {Engineering Topological Surface States: HgS, HgSe, and HgTe},
   Author                   = {F. Virot, R. Hayn,M. Richter, J. v. d. Brink},
   Journal                  = {Phys.
 Rev. Letters},
