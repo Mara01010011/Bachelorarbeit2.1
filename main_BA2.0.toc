@@ -1,0 +1,59 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Theory}{2}{section.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Topological insulators}{2}{subsection.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Description of a crystal structure}{3}{subsection.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3}Crystal surfaces.}{4}{subsection.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.1}The zinc blende crystal and its (001) cleavage}{4}{subsubsection.2.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.2}Reciprocal lattice and first Brillouin zone.}{6}{subsubsection.2.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.3}Surface modeling}{7}{subsubsection.2.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Terminations}{8}{figure.caption.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Number of layers}{8}{section*.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline The Supercell Approach}{8}{section*.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4}Basics of Density Functional Theory}{9}{subsection.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.4.1}The ground-state functional}{9}{subsubsection.2.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.4.2}Approximations for the exchange-correlation functional}{11}{subsubsection.2.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5}Spin-orbit coupling}{11}{subsection.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.1}Spin-orbit coupling in Schr\IeC {\"o}dinger equation}{11}{subsubsection.2.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.2}SOC impact on band structure}{13}{subsubsection.2.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Results}{15}{section.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Input for FHI-aims}{15}{subsection.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}The lattice constant and the k-grid}{16}{subsection.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}The bulk band structure in the first 3D Brillouin zone}{18}{subsection.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4}Projected bulk band structure}{19}{subsection.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Interpretation of the results}{25}{section.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}k-grid study}{25}{subsection.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}Lattice constant study}{25}{subsection.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3}Bulk band structure}{25}{subsection.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4}PBBS and the band structure of the slabs}{25}{subsection.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Conclusion}{27}{section.5}

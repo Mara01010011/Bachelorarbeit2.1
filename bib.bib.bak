@@ -1,0 +1,294 @@
+% This file was created with JabRef 2.10.
+% Encoding: UTF-8
+
+
+@Article{Bansil,
+  Author                   = {A. Bansil et al.},
+  Journal                  = {Rev. Mod. Phys.},
+  Year                     = {2016},
+  Number                   = {021004},
+  Volume                   = {88},
+
+  Owner                    = {tamara},
+  Timestamp                = {2017.03.16}
+}
+
+@Article{2D_top_ins,
+  Author                   = {Li J. et al.},
+  Journal                  = {Sci. Rep.},
+  Year                     = {2015},
+  Number                   = {14115},
+  Volume                   = {5},
+
+  Doi                      = {10.1038/srep14115},
+  Owner                    = {tamara},
+  Timestamp                = {2017.03.07}
+}
+
+@Article{HgTe_structure_001,
+  Author                   = {S.-C. Wu et al.},
+  Journal                  = {epljournal},
+  Year                     = {2014},
+
+  Month                    = {September},
+  Number                   = {57006},
+  Volume                   = {107},
+
+  Doi                      = {10.1209/0295-5075/107/57006},
+  Owner                    = {tamara},
+  Timestamp                = {2017.02.01}
+}
+
+@Misc{,
+  Author                   = {W. Kohn et al.},
+
+  Owner                    = {tamara},
+  Timestamp                = {2017.03.17},
+  Url                      = {http://www.nobelprize.org/nobel_prizes/chemistry/laureates/1998/kohn-lecture.pdf}
+}
+
+@Article{Qi,
+  Author                   = {X.-L. Qi et al.},
+  Journal                  = {Science},
+  Year                     = {2009},
+  Number                   = {1184},
+  Volume                   = {323},
+
+  Owner                    = {tamara},
+  Timestamp                = {2017.02.16}
+}
+
+@MastersThesis{Chalmers,
+  Author                   = {B. Abrahamsson},
+  School                   = {Chalmers University of Technology},
+  Year                     = {2015},
+
+  Owner                    = {tamara},
+  Timestamp                = {2017.02.09}
+}
+
+@Article{Bernevig,
+  Author                   = {B.A. Bernevig and S.C. Zhang},
+  Journal                  = {Physical Review Letters},
+  Year                     = {2006},
+  Number                   = {106802},
+  Volume                   = {96},
+
+  Owner                    = {tamara},
+  Timestamp                = {2017.03.17}
+}
+
+@Article{textbook_ti,
+  Author                   = {C. Bouvier, T. Meunier, P. Ballet, X. Baudry, R. B. G. Kramer, L. Lévy},
+
+  Owner                    = {tamara},
+  Timestamp                = {2017.03.17},
+  Url                      = {https://arxiv.org/abs/1112.2092v1}
+}
+
+@Article{Kane_Mele1,
+  Author                   = {C. L. Kane, E. J. Mele},
+  Journal                  = {Phys. Rev. Lett.},
+  Year                     = {2005},
+  Number                   = {226801},
+  Volume                   = {95},
+
+  Owner                    = {tamara},
+  Timestamp                = {2017.03.01}
+}
+
+@Article{Kane_Mele2,
+  Author                   = {C. L. Kane, E. J. Mele},
+  Journal                  = {Phys. Rev. Lett.},
+  Year                     = {2005},
+  Number                   = {146802},
+  Volume                   = {95},
+
+  Owner                    = {tamara},
+  Timestamp                = {2017.03.01}
+}
+
+@Article{top_surf_states,
+  Author                   = {F. Virot, R. Hayn,M. Richter, J. v. d. Brink},
+  Journal                  = {Phys.
+Rev. Letters},
+  Year                     = {2013},
+
+  Month                    = {Oct.},
+  Number                   = {146803},
+  Volume                   = {111},
+
+  Owner                    = {tamara},
+  Timestamp                = {2017.03.07}
+}
+
+@Book{solid_state_book,
+  Title                    = {Solid State Physics},
+  Author                   = {G. Grosso, G. P. Parravicini},
+  Publisher                = {academic press},
+  Year                     = {2003},
+
+  Owner                    = {tamara},
+  Timestamp                = {2017.02.01}
+}
+
+@Article{Moore,
+  Author                   = {J. E. Moore, L. Balents},
+  Journal                  = {Phys. Rev. B},
+  Year                     = {2007},
+  Number                   = {121306},
+  Volume                   = {75},
+
+  Owner                    = {tamara},
+  Timestamp                = {2017.02.16}
+}
+
+@Book{Kittel,
+  Title                    = {Introduction to Solid State Physics},
+  Author                   = {Ch. Kittel},
+  Publisher                = {Wiley},
+  Edition                  = {8},
+
+  Owner                    = {tamara},
+  Timestamp                = {2017.01.29}
+}
+
+@MastersThesis{Graz,
+  Author                   = {D. W. Knebl},
+  School                   = {Karl-Franzens-Universität Graz},
+  Year                     = {2013},
+
+  Owner                    = {tamara},
+  Timestamp                = {2017.02.01}
+}
+
+@Article{Fu_Kane_Mele,
+  Author                   = {L.Fu, C. L. Kane, E. J. Mele},
+  Journal                  = {Phys. Rev. Lett.},
+  Year                     = {2007},
+  Number                   = {106803},
+  Volume                   = {98},
+
+  Owner                    = {tamara},
+  Timestamp                = {2017.02.16}
+}
+
+@InCollection{lattice_constant,
+  Title                    = {Semiconductors},
+  Author                   = {Landolt-Börnstein},
+  Booktitle                = {Numerical Data and Functional Relationships in Science and Technology},
+  Publisher                = {Springer},
+  Pages                    = {212},
+  Volume                   = {44},
+
+  Comment                  = {subvolume E},
+  Owner                    = {tamara},
+  Timestamp                = {2017.03.06}
+}
+
+@Article{PBE,
+  Author                   = {M. Ernzerhof, G. E. Scuseria},
+  Journal                  = {The Journal of Chemical Physics},
+  Year                     = {1999},
+  Number                   = {11},
+  Volume                   = {110},
+
+  Doi                      = {10.1063/1.478401},
+  Owner                    = {tamara},
+  Timestamp                = {2017.02.02}
+}
+
+@Article{aluminium,
+  Author                   = {P.W.M. Jacobs, Yu.F. Zhukoviskii, Yu. Mastrikov, Yu.N. Shunin},
+  Journal                  = {Computer Modelling \& New Technologies},
+  Year                     = {2002},
+  Number                   = {1},
+  Pages                    = {7-28},
+  Volume                   = {6},
+
+  Owner                    = {tamara},
+  Timestamp                = {2017.02.01}
+}
+
+@Article{Roy,
+  Author                   = {R. Roy,},
+  Journal                  = {Phys.
+Rev. B},
+  Year                     = {2009},
+  Number                   = {195322},
+  Volume                   = {79},
+
+  Owner                    = {tamara},
+  Timestamp                = {2017.02.16}
+}
+
+@Misc{tutorial2,
+  Title                    = {Tutorial II: Periodic systems
+Manuscript for Exercise Problems},
+
+  Author                   = {Sebastian Kokott, Franz Knuth, Lydia Nemec,
+Björn Bieniek, Björn Lange, and William Huh},
+
+  Owner                    = {tamara},
+  Timestamp                = {2017.02.23},
+  Url                      = {http://th.fhi-berlin.mpg.de/sitesub/meetings/dft-workshop-2016/uploads/Meeting/Tutorial_2_2016.pdf}
+}
+
+@Article{topological_insulators,
+  Author                   = {X.-L. Qi, S.-C. Zhang},
+  Journal                  = {Physics Today},
+  Year                     = {2010},
+
+  Month                    = {January},
+  Pages                    = {33-38},
+
+  Owner                    = {tamara},
+  Timestamp                = {2017.01.27}
+}
+
+@Article{Hughes_Zhang,
+  Author                   = {X.-L. Qi, T. L. Hughes, S.-C. Zhang},
+  Journal                  = {Phys. Rev. B},
+  Year                     = {2008},
+  Number                   = {195424},
+  Volume                   = {78},
+
+  Owner                    = {tamara},
+  Timestamp                = {2017.02.16}
+}
+
+@Article{bulk_bs,
+  Author                   = {Z. W. Lu, David Singh, and Henry Krakauer},
+  Journal                  = {PhysRev B},
+  Year                     = {1989},
+  Number                   = {10154},
+  Volume                   = {39},
+
+  Owner                    = {tamara},
+  Timestamp                = {2017.03.06}
+}
+
+@Misc{aims,
+  Owner                    = {tamara},
+  Timestamp                = {2017.03.15},
+  Url                      = {https://aimsclub.fhi-berlin.mpg.de/}
+}
+
+@Misc{closed_shell,
+  Owner                    = {tamara},
+  Timestamp                = {2017.03.15},
+  Url                      = {https://en.wikipedia.org/wiki/Open_shell#cite_note-3}
+}
+
+@Misc{nobel_prize,
+  Owner                    = {tamara},
+  Timestamp                = {2017.03.07},
+  Url                      = {https://www.nobelprize.org/nobel_prizes/physics/laureates/2016/advanced-physicsprize2016.pdf}
+}
+
+@Misc{wiki_top_ins,
+  Owner                    = {tamara},
+  Timestamp                = {2017.03.01},
+  Url                      = {https://en.wikipedia.org/wiki/Topological_insulator#/media/File:Topological_insulator_band_structure.svg}
+}
+

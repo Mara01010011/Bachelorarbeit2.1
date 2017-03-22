@@ -1,0 +1,84 @@
+	All results were obtained by using FHI-aims \cite{aims}. 
+	%Each calculation is been done in a separate folder.
+	The input data are the files control.in and geometry.in.
+	The geometry.in contains the lattice vectors' coordinates and the positions and types of the atom forming the basis. One example for the calculations of the bulk HgTe properties is:
+		\begin{verbatim}
+			# hgte lattice constant 6.685 AA
+			lattice_vector	0.00000		3.34250		3.34250
+			lattice_vector	3.34250		0.00000		3.34250
+			lattice_vector	3.34250		3.34250		0.00000
+			
+			atom	0.00000		0.00000		0.00000 Te
+			atom	1.67125		1.67125		1.67125 Hg
+		\end{verbatim}
+%	which is nothing else but the coordinates written in figure \ref{fcc}.
+	
+	The control.in contains all physical and computational settings for the calculation. The properties for the atoms also appear in the control.in, specifically the different types of basis sets settings.
+%	are normally stored in the aims directory \texttt{SPECIES\_DEFAULTS} and have to be copied
+	One can choose between \textit{light, tight} and \textit{really tight}, in this thesis we were using the \textit{light} settings.
+%	But above that part, there are physical settings and the settings about the band structure output and the k-grid and about the convergence, for example for the k-grid study below:
+	Among the setting one must consider is the exchange-correlation functional, the spin, the numerical settings for the self-consistency cycle convergence and the grid size of the reciprocal lattice. For example see what we used for the bulk HgTe calculations:
+	\\
+	\begin{minipage}[c]{0.45\linewidth}	\vspace{15pt}
+		\begin{verbatim}
+		# Physical settings
+		xc pbe
+		spin none
+		relativistic atomic_zora scalar
+		default_initial_moment 0
+		#
+		\end{verbatim} 
+	\end{minipage}
+	\begin{minipage}[c]{0.55\linewidth} \vspace{11pt}
+		\begin{verbatim}
+		
+		# methode to be used, here pbe
+		# spin treatment
+		# include relativistic effects
+		# initial spin for the atoms
+		\end{verbatim}
+	\end{minipage} 
+	\begin{minipage}[c]{0.3\linewidth} \vspace{0.2cm}
+		\begin{verbatim} 
+			# SCF convergence
+			sc_accuracy_rho		1E-4
+			sc_accuracy_eev		1E-2
+			sc_accuracy_etot		1E-5
+			sc_iter_limit			100	
+		\end{verbatim}
+	\end{minipage} 
+	\hfill
+	\begin{minipage}[c]{0.7\linewidth} \vspace{0.15cm}
+%		\vspace{8pt}
+		\begin{verbatim}
+		# convergence criteria of self convergence cycle
+		# of change of density
+		# of sum of orbital eigenvalues
+		# total energy between two consecutive cycles
+		# maximum of iterations
+		\end{verbatim}
+	\end{minipage} 
+	\begin{minipage}[c]{0.3\linewidth}\vspace{0.2cm}
+		\begin{verbatim}
+			#
+			# k_grid settings
+			k_grid	8	8	8
+		\end{verbatim}\vspace{8pt}
+	\end{minipage}
+	\hfill 
+	\begin{minipage}[c]{0.7\linewidth}\vspace{28pt}
+		\begin{verbatim}
+		
+		# k_x k_y k_z for the integration in k-space
+		\end{verbatim}\vspace{8pt}
+	\end{minipage} 
+
+%	The spin was always set to none, otherwise, if it would be set to collinear, one would have to set \texttt{default\_initial\_moment} to \texttt{hund} or guessed it by hand.
+	Spin none means that we deal with closed-shell calculations, in other words, the valence shell is regarded as filled \cite{closed_shell}. 
+	The relativistic effects had to be taken into account since Hg and Te are both heavy elements and spin-orbit coupling, which is at the heart of the properties of topological insulators, can be considered as a low energy relativistic effect.
+%	these effects, as explained in chapter \ref{topological_insulator}, are essential for the research of topological insulators.   
+	
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "main_BA2.0"
+%%% End:

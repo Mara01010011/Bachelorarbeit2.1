@@ -1,0 +1,26 @@
+% This file was created with JabRef 2.10.
+% Encoding: UTF-8
+
+
+@Book{Kittel,
+  Title                    = {Introduction to Solid State Physics},
+  Author                   = {Charles Kittel},
+  Editor                   = {8},
+  Publisher                = {Wiley},
+
+  Owner                    = {tamara},
+  Timestamp                = {2017.01.29}
+}
+
+@Article{topological_insulators,
+  Author                   = {X.-L. Qi, S.-C. Zhang},
+  Journal                  = {Physics Today},
+  Year                     = {2010},
+
+  Month                    = {January},
+  Pages                    = {33-38},
+
+  Owner                    = {tamara},
+  Timestamp                = {2017.01.27}
+}
+

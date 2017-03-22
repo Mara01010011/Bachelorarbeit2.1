@@ -1,0 +1,250 @@
+	This subsection follows the content of \cite{tutorial2} appendix 4,5 and 6. 
+%In this subsection it is explained which Schrödinger equation FHI-aims uses by including some keywords, in order to incorporate relativistic effects. 
+
+\subsubsection{Spin-orbit coupling in Schrödinger equation}
+	
+%	FHI-aims considers relativistic effects, if one includes the atomic ZORA where the scalar energy is set to zero and only the free-atom potential of the nearest atom is used.
+%	The formal equation is a scalar-relativistic Schrödinger equation which can be written as \cite{tutorial2}
+%	\begin{equation} \label{scalar-relativistic_Schroe}
+%		\left(
+%			\p \frac{c^2}{2 c^2 + \epsilon - V} \p + V
+%		\right) \Psi = \epsilon \Psi
+%	\end{equation}
+%	with rescaled kinetic energy. 
+	The spin-orbit interaction is the mutual interaction between a particles spin and its motion. 
+	The Dirac-equation for electrons \eqref{Dirac_equation} explaines why this type of coupling should be included in the Schrödinger equation, or rather the Pauli equation, since we are including the additional spin structure by two spinors: 
+%	The spin-orbit coupling is links the spin and the momentum of a particle. For the calculations an equation which includes the spin is needed.
+%	Since the Schrödinger equation %\ref{scalar-relativistic_Schroe} 
+%	does not consider the spin,	an other equation needs to be regarded: The Dirac-equation:
+	\begin{equation} \label{Dirac_equation}
+		\left(
+			c \boldsymbol\alpha \cdot \p + c^2(\beta - 1) + V) 
+		\right) \Psi = \epsilon \Psi
+	\end{equation}
+%	which is a relativistic four-dimensional equation. It is modeling electrons and positrons in a superposition state $\Psi$ with the Dirac matrices 
+	where $\Psi$ is a four-dimensional wave function whereas $\boldsymbol{\alpha}$ and $\beta$ are the $4 \times 4$ matrices
+	\begin{align}
+		\boldsymbol\alpha &= 
+		\begin{pmatrix}
+			0 & \boldsymbol{\sigma} \\
+			\boldsymbol{\sigma} & 0
+		\end{pmatrix} & &\text{and} &
+		\beta &= 
+		\begin{pmatrix}
+		\mathds{1}_2 & 0 \\
+		0 & -\mathds{1}_2
+		\end{pmatrix}
+	\end{align}
+%	which are acting on the four-dimensional spinor $\Psi$ including the Pauli matrices
+	with $\boldsymbol{\sigma} = (\sigma_x, \sigma_y, \sigma_z)$:
+	\begin{align}
+		\sigma_x &=
+		 \begin{pmatrix}
+		 0 & 1 \\
+		 1 & 0
+		 \end{pmatrix} ,&
+		 \sigma_y &=
+		 \begin{pmatrix}
+		 0 & -i \\
+		 i & 0
+		 \end{pmatrix} ,&
+		 \sigma_z &=
+		 \begin{pmatrix}
+		 1 & 0 \\
+		 0 & -1
+		 \end{pmatrix}.
+	\end{align}
+	which are the Pauli matrices. The term $\boldsymbol{\alpha} \cdot \p$ explicitly shows the coupling of spin and momentum, since it includes a momentum operator, which acts on the orbital wave function, and the matrix $\boldsymbol{\alpha}$, which is acting on the spin degrees of freedom.
+%	For getting the full potential is normally in need of quantum-electrodynamic treatment, but for quantum chemistry and condensed matter physics, this can be cut down to the Coulomb and Breit terms \cite{tutorial2} where the latter will not be regarded further in this case because it is neglectable.
+%	
+%	The solutions for electrons for \ref{Dirac_equation} are positive energies and are obtained by separating $\Psi$ into a two-dimensional large component $\Psi_L$ and a two-dimensional small component $\Psi_S$, where the first one corresponds to spin-up and spin-down electrons and the second to spin-up and -down positrons
+	It is essential to solve the equation which includes the coupling of all $\Psi$ components. Fortunately in condensed matter systems it is possible to expand eq.\eqref{Dirac_equation} in terms of $\frac{v}{c}$ and get a simpler non-relativistic equation which is still quite precise.
+	In order to do so, we separate $\Psi$ into two components, the 'larger' $\Psi_L$, which dominates for the non-relativistic limit, has positive energies and therefore represents the electron and the 'smaller' $\Psi_S$ component with negative energies and which represents a positron. 
+	\begin{equation}
+		\Psi = 
+		\begin{pmatrix}
+			\Psi_L \\ \Psi_S
+		\end{pmatrix}
+	\end{equation}	
+	Substitution into Dirac equation \eqref{Dirac_equation}: 
+	\begin{align}
+		\left[
+			c 
+			\begin{pmatrix}
+			0 & \boldsymbol{\sigma} \\
+			\boldsymbol{\sigma} & 0 
+			\end{pmatrix}
+			\cdot \p
+			+ c^2
+			\left(
+				\begin{pmatrix}
+					\mathds{1}_2 & 0 \\
+					0 & \mathds{1}_2
+				\end{pmatrix} 
+				- 1
+			\right)
+			+ V
+		\right] 
+		\begin{pmatrix}
+			\Psi_L \\
+			\Psi_S
+		\end{pmatrix} 
+		&= \epsilon 
+		\begin{pmatrix}
+			\Psi_L \\
+			\Psi_S
+		\end{pmatrix} \\	%nächste Zeile
+		\Leftrightarrow ~~
+		c
+		\begin{pmatrix}
+			\boldsymbol{\sigma} \cdot \p ~\Psi_S \\
+			\boldsymbol{\sigma} \cdot \p ~\Psi_L
+		\end{pmatrix}
+		+
+		c^2
+		\begin{pmatrix}
+			\Psi_L \\
+			\Psi_S
+		\end{pmatrix}
+		+
+		(-2c^2 +V)
+		\begin{pmatrix}
+			\Psi_L \\
+			\Psi_S
+		\end{pmatrix}
+		&= \epsilon 
+		\begin{pmatrix}
+			\Psi_L \\
+			\Psi_S
+		\end{pmatrix} \\ %nächste Zeile
+		\Leftrightarrow~~
+		c
+		\begin{pmatrix}
+			\boldsymbol{\sigma} \cdot \p ~\Psi_S \\
+			\boldsymbol{\sigma} \cdot \p ~\Psi_L
+		\end{pmatrix}
+		+
+		\begin{pmatrix}
+			V~\Psi_L \\
+			(-2c^2+V)~\Psi_S
+		\end{pmatrix}
+		&= \epsilon 
+		\begin{pmatrix}
+			\Psi_L \\
+			\Psi_S
+		\end{pmatrix}
+	\end{align}
+yields two coupled equations 
+	\begin{enumerate}[(i)]
+		\item $c ~(\boldsymbol{\sigma} \cdot \p) ~\Psi_S + V~\Psi_L = \epsilon~\Psi_L	$ \label{1}
+		\item $c ~(\boldsymbol{\sigma} \cdot \p) ~\Psi_L + (-2c^2+V)~\Psi_S = \epsilon~\Psi_S$ \label{2}
+	\end{enumerate}
+Transpose Eq.(\ref{2})
+	\begin{align}
+		((2c^2 - V) + \epsilon) \Psi_S &= c~(\boldsymbol{\sigma} \cdot \p)\Psi_L	\\
+		\Leftrightarrow
+		\Psi_S &= c 
+		\left(
+			\frac{1}{2c^2 - V + \epsilon} 
+		\right) 
+		(\boldsymbol{\sigma} \cdot \p)\Psi_L \\
+		\Leftrightarrow
+		\Psi_S &= \frac{1}{2c}
+		\left(
+		{1 + \frac{\epsilon - V}{2c^2}} 
+		\right)^{-1} 
+		(\boldsymbol{\sigma} \cdot \p)\Psi_L,
+	\end{align}
+then inserting into Eq. (\ref{1})
+	\begin{align}
+		c ~(\boldsymbol{\sigma} \cdot \p)
+		\left[
+			\frac{1}{2c}
+			\left(
+			{1 + \frac{\epsilon - V}{2c^2}} 
+			\right)^{-1}
+		\right]		
+		(\boldsymbol{\sigma} \cdot \p)\Psi_L
+		+ V \Psi_L 
+		&= \epsilon \Psi_L
+	\end{align}
+and by finally using $(\boldsymbol{\sigma} \cdot \fata)(\boldsymbol{\sigma} \cdot \bb) =  (\fata \cdot \bb) + i (\fata \times \bb) \cdot \boldsymbol{\sigma} $ 
+%and rewriting the part in squared bracket together with the $c$,
+we obtain
+	\begin{align} \label{SOC_equation}
+		\left(
+			\p \frac{c^2}{2c^2 + \epsilon - V} \p 
+			+ i \p \frac{c^2}{2c^2 + \epsilon - V} \times \p \cdot \boldsymbol{\sigma} 
+			+ V 
+		\right) \Psi_L 
+		&= \epsilon \Psi_L	
+	\end{align}
+	This equation is similar to the Schrödinger equation and is now quadratic in the momentum $\boldsymbol p$. For the scalar relativistic case, FHI-aims solves \eqref{SOC_equation} without including the second term. This term is corrected in respect to the kinetic energy and is called the \textit{scalar} relativistic Schrödinger equation. 
+%This equation includes the Schrödinger equation in the relativistic case, which FHI-aims uses if one includes \texttt{relativistic} together with the atomic ZORA, but has no spin dependence. It is the first term together with the potential $V$, but regarded for $\epsilon = 0$ and in the free-atom potential of the nearest atom. 
+	The well-known Schrödinger equation can be recovered by expanding eq. \eqref{SOC_equation} to lowest order in $(\epsilon - V)/2c^2$. Indeed,
+%The non-relativistic case can be obtained by expanding \eqref{SOC_equation} in the zeroth order of $(\epsilon - V)/2c^2$, which in this case is nothing else like $c\rightarrow \infty$
+	\begin{align}
+		\frac{c^2}{2c^2 + \epsilon -V} = 
+		\frac{1}{2}~ \frac{1}{1 + \frac{\epsilon-V}{2c^2}} 
+	\end{align}
+%and the last fraction is the geometric series $\frac{1}{1 + x}$, and if $x$ negligible then the geometric series is too. Additionally
+	which equals $\frac{1}{2}$ for the zeroth order. The expansion of the first and second term is the same, but note that the crossproduct of these two identical vectors $\p \times \p$ is zero.
+	This leads to the non-relativistic Schrödinger equation:
+	\begin{align}
+		\left(
+		\frac{1}{2} \p^2 + V 
+		\right)\Psi_L
+		= \epsilon \Psi_L
+	\end{align}
+
+%The second term in \eqref{SOC_equation} is the spin-orbit coupling part. It can be evolved by expand it's Taylor series to lowest, not disappearing order in $x = (\epsilon - V)/2c^2$ where $\epsilon$ is also set to zero.
+	Now let us consider the lowest non-trivial order of corrections coming from the second term in \eqref{SOC_equation} by using the Taylor series of the geometric series:
+	\begin{align}
+		f(x)=& \frac{1}{1+x} \\
+		\text{Taylor series to first order:}& ~f(a) + \frac{f'(a)}{1!} (x-a)  \\
+		\Rightarrow
+		\frac{1}{1+a} + \frac{1}{2}
+		\left(
+			- \frac{1}{(1+a)^2}	
+		\right)&
+		(x - a) 
+		\overset{a=0}{\underset{x=-V/2c^2}{=}}		
+		1 + \frac{V}{2c^2}
+	\end{align} 
+%which means the first part is zero again, and the second yields
+	By setting $\epsilon=0$ and looking for the non-trivial correction we obtain the spin-orbit interaction term  
+	\begin{align}
+		V_{SOC} = \frac{i}{4c^2} \p V \times \p \cdot \boldsymbol{\sigma}.
+	\end{align}
+	Relativistic effects don't need to be considered for structures with light atoms, if the electron is not near the nuclei. But if a structure contains heavy elements, like HgTe, it is necessary since spin-orbit also affects valence electrons.
+%those effects no longer just occur near the nuclei. It additionally spreads out into the valence region. 
+
+	Finally, we would like to point out that the actual calculation of FHI-aims, 
+	is not considered self-consistently but is applied only after the self-consistent cycle of the density has converged.
+%	the spin-orbit coupling is not included into the calculations of the band structure and energies, and is applied after the self-consistency circle converged. It is an perturbative method.
+
+%For the calculations the keyword 
+%	\begin{verbatim}
+%		include_spin_orbit
+%	\end{verbatim}
+%must be set for activating the spin-orbit coupling calculations.
+\subsubsection{SOC impact on band structure}
+	The splitting behavior of the bands, which will be seen later in the results, is explained as follows.
+	
+	Beginning with the non-relativistic Schrödinger equation, the eigenstates with angular momentum $\ell$ and the spin $s$ can be written as a tensor product of a spatial function and a spin function, the spinor. For certain states, for example the s,p,d, etc. states for spherically symmetric potential, a particular symmetry of an external potential result in a particular banding of eigenvalues and symmetries between eigenvectors. 
+%	This is known as the irreducible representations of the single group in group theory. 
+	
+	Adding the scalar-relativistic which brings us to the Schrödinger equation made out of the first part in \ref{SOC_equation} plus the $V$, the symmetry of the system doesn't change, but the Hamiltonian does. That means, that the eigenvalue of single electrons change, but the banding does not. 
+	
+	Turning on the spin-orbit coupling leads to a conservation of the total angular momentum $j=\ell + s$, but angular momentum and spin are no longer separately conserved. 
+%	There are even no spin-up and spin-down eigenstates. Hence the single group symmetry, which was explained above, is broken. The Kramer's theorem explains that as long as time-reversal symmetry is conserved, the single electron states are double degenerated. 
+	Consequently, the degeneracy in the spin quantum number might be lifted by the spin-orbit interaction and the bands might split (in some situations, some bands might still present accidental degeneracies)
+	As a consequence, it is possible that the degeneracy in the spin quantum number is been reinforced by the spin-orbit coupling, so that the bands might split up. But note, that sometimes, some bands can still have coincidental degeneracies. 
+%	This degeneracy leads to the band splitting due to the spin-$1/2$ character of the electron and the Zeeman effect which comes into account because of  the form of the SOC-operator.
+	If the band splitting is very strong, some bands can even get inverted.
+	
+	
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "main_BA2.0"
+%%% End:

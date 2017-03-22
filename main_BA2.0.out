@@ -1,0 +1,25 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Theory}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Topological insulators}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Description of a crystal structure}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Crystal surfaces.}{section.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.3.1}{The zinc blende crystal and its \(001\) cleavage}{subsection.2.3}% 6
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Reciprocal lattice and first Brillouin zone.}{subsection.2.3}% 7
+\BOOKMARK [3][-]{subsubsection.2.3.3}{Surface modeling}{subsection.2.3}% 8
+\BOOKMARK [2][-]{subsection.2.4}{Basics of Density Functional Theory}{section.2}% 9
+\BOOKMARK [3][-]{subsubsection.2.4.1}{The ground-state functional}{subsection.2.4}% 10
+\BOOKMARK [3][-]{subsubsection.2.4.2}{Approximations for the exchange-correlation functional}{subsection.2.4}% 11
+\BOOKMARK [2][-]{subsection.2.5}{Spin-orbit coupling}{section.2}% 12
+\BOOKMARK [3][-]{subsubsection.2.5.1}{Spin-orbit coupling in Schr\366dinger equation}{subsection.2.5}% 13
+\BOOKMARK [3][-]{subsubsection.2.5.2}{SOC impact on band structure}{subsection.2.5}% 14
+\BOOKMARK [1][-]{section.3}{Results}{}% 15
+\BOOKMARK [2][-]{subsection.3.1}{Input for FHI-aims}{section.3}% 16
+\BOOKMARK [2][-]{subsection.3.2}{The lattice constant and the k-grid}{section.3}% 17
+\BOOKMARK [2][-]{subsection.3.3}{The bulk band structure in the first 3D Brillouin zone}{section.3}% 18
+\BOOKMARK [2][-]{subsection.3.4}{Projected bulk band structure}{section.3}% 19
+\BOOKMARK [1][-]{section.4}{Interpretation of the results}{}% 20
+\BOOKMARK [2][-]{subsection.4.1}{k-grid study}{section.4}% 21
+\BOOKMARK [2][-]{subsection.4.2}{Lattice constant study}{section.4}% 22
+\BOOKMARK [2][-]{subsection.4.3}{Bulk band structure}{section.4}% 23
+\BOOKMARK [2][-]{subsection.4.4}{PBBS and the band structure of the slabs}{section.4}% 24
+\BOOKMARK [1][-]{section.5}{Conclusion}{}% 25

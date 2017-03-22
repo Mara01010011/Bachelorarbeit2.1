@@ -1,0 +1,106 @@
+	%The density functional theory (DFT)
+	%(What is it? Who discovered DFT? Functionals ) and mention code packages used for the study of band structures.
+	The density functional theory (DFT) is a computational method in quantum mechanics used for analyzing the ground state properties of physical systems. 
+	Ab-initio stands for calculations which are performed only by using fundamental laws of physics like the Schrödinger equation for quantum mechanical problems. At the same time, no approximations are taken whereby symmetries are still included. Consequently, one usually needs notable large computational resources.
+%	ab inito calculation method for the dispersion relation. Ab-initio is Latin and means 'from the beginning'. These kinds of calculations are based on well established and basic laws of physics and no additional assumptions or special models are used. In solid state physics, the methods of calculating the properties of solids are often based on approximations and are not consider every atom's influences. But the ab-initio calculation method does. The consequences are, that there is a huge amount of CPU effort in need, even for small input.
+	The DFT was first introduced by W.Kohn et al. \cite{Kohn}. Thereby it was found that the ground-state energy of a quantum mechanical system can be represented by the density functional. This simplifies the many-body problem down to a self-consistent one-body problem.  
+	
+	In the following most equations were adapted from \cite{solid_state_book}
+%	The DFT was first introduced by the Thomas-Fermi model 1927 \cite{Graz}, but this model gave poor results. It took 30 years till Hohenberg and Kohn developed their energy functional which was then upgraded by Kohn and Sham.
+	\subsubsection{The ground-state functional}
+%	It is shown by the DFT, that instead of searching for ground-state of a many-electron wavefunction, the ground-state one-body electron density $\rho(\textbf{r})$ can be used.  
+	
+	Let us consider a system containing $N$ electrons 
+%	and the standard many-electron
+	with Hamiltonian $H_e$ 
+%	which consists of the inner part with kinetic energy $T$ and the electron-electron Coulomb interactions $V_{\text{ee}}$, and of the external potential, which is in this case the interaction between the nuclei and the electrons. 
+	that contains three parts: kinetic energy $T$, external potential $V_{ext}$, which describes the interaction between the electrons and a fixed nuclei background, and the two-body electron-electron interaction known as the Coulomb potential $V_{ee}$.
+	\begin{align}
+		H_\text{e} = T + V_{\text{ee}} + V_{\text{ext}} &= \sum_i \frac{\textbf{p}^2_i}{2m} +
+		\frac{1}{2} \sum_{i\neq j} \frac{e^2}{|\rr_i - \rr_j|} + \sum_i v_{\text{ext}}(\rr_i) \\
+		\text{with} ~v_{\text{ext}}(\rr) &= V_{\text{nucl}}(\rr)= -\sum_I \frac{z_I e^2}{|\rr - \R_I|}
+	\end{align}	
+	where $e$ is the elementary charge.
+	The external potential $V_{ext}$ contains the interaction between each proton $I$ in the nuclei whereby $z_I$ is the number of all protons in the nuclei, and each electron $i$, $v_{ext}(\rr)$ is therefore the external potential for a single electron in the potential background of a nuclei. 
+%	The ground-state $\Psi_\text{G}(\rr_1,\dots,\rr_N)$ of many electrons just depends on the external potential $v_{\text{ext}}(\rr)$. And the one-body ground-state density $\rho(\rr)$ can be defined as 
+
+	If $\Psi_G(\rr_1,\dots,\rr_N)$ is the wave function of the ground state in the many body Schrödinger equation
+	\begin{equation}
+		H_e \Psi_G = E_G \Psi_G
+	\end{equation}
+	then it can be shown, that the one-body ground states density, which is defined as
+	\begin{equation}
+		 \rho(\rr) = \braket{\Psi_\text{G}(\rr_1,\dots,\rr_N)|\sum_i \delta (\rr -\rr_i)| \Psi_\text{G}(\rr_1,\dots,\rr_N)}
+	\end{equation}
+	can be uniquely converted into the external Potential $V_{ext}(\rr)$ and vice versa. In other words, for one given $V_{ext}(\rr)$ there exists specifically one $\rho(\rr)$. This is known as one of the Hohnberg-Kohn theorems \cite{solid_state_book}. 
+%	which leads to
+%	\begin{equation}
+%		\braket{\Psi_\text{G}|V_{\text{ext}}| \Psi_\text{G}} =
+%		\int \rho(\rr) v_{\text{ext}}(\rr) \diff \rr.
+%	\end{equation}
+%	This means, there is a functional that links $\rho(\rr)$ and $v_{\text{ext}}(\rr)$ and if there are several different $v_{\text{ext}}$, then they correspond to different ground-state density functions.
+	
+	The second Hohenberg-Kohn theorem says that the ground state energy can be expressed in a density functional. That functional is called the Hohenberg-Kohn energy functional (\cite{solid_state_book} p.133) and reads
+%	The useful result of this theorem is the knowledge, that the ground-state energy is a functional $E[\rho]$ containing the expectation values of the kinetic energy an the electron-electron interaction. It is called the Hohenberg-Kohn energy functional 
+	\begin{equation} \label{HK_functional}
+		E^{\text{HK}}[\rho(\rr);v_{\text{ext}}(\rr)] = 
+		T[\rho(\rr)] + V_{\text{ee}}[\rho(\rr)] + \int v_{\text{ext}}(\rr) \rho(\rr) \diff \rr 
+	\end{equation}
+%	The ground-state is found by minimizing $E^{HK}$, and the density $\rho_0$ which minimizes it, is the ground-state density.
+	This means now the ground-state energy of a many-body problem can be disposed immediately if the density is known. 
+
+	By rearranging the functional above, we define the so-called exchange-correlation functional $E_{xc}[\rho]$:
+	\begin{align}
+	E_{xc}[\rho] = T[\rho] - T_0 [\rho] + V_{\text{ee}} [\rho] - V_\text{H} [\rho]
+	\end{align}
+	so that equation \eqref{HK_functional} is now
+	\begin{equation}
+	E^{\text{HK}}[\rho(\rr); v_{\text{ext}}(\rr)] = 
+	T_0 [\rho] + V^\text{HK}(\rr)
+	\end{equation}
+	with the kinetic energy of a system with non-interacting electrons:
+	\begin{equation}
+		T_0 [\rho] = \sum_i \braket{\phi_i(\rr)| -\frac{\hbar^2 \nabla^2}{2m} | \phi_i(\rr)}
+	\end{equation}  
+	and the Hohenberg-Kohn potential
+	\begin{equation}
+		V^\text{HK}(\rr)= V_\text{H} [\rho] + \int v_{\text{ext}}(\rr) \rho(\rr) \diff \rr + E_{\text{xc}} [\rho]
+	\end{equation}
+	with the Hartree potential which is defined as
+	\begin{equation}
+		V_\text{H}[\rho]= \frac{1}{2} \sum_{i,j} \braket{\phi_i \phi_j| \frac{e^2}{|\rr_i-\rr_j|} |\phi_i \phi_j}.
+	\end{equation}
+	
+	Until now, we didn't get anything useful. However the original problem was cleverly rewritten in a way, that the minimization of $E^\text{KH}$ produces the so-called Kohn-Sham equations. These are the effective one-particle equations which are Schrödinger-like. Their eigenfunctions are called Kohn-Sham orbitals $\phi_i(\rr)$ which depend on the particle density $\rho(\rr) = \sum_i |\phi_i(\rr)|^2$.
+%	Now , the Kohn-Sham equations are minimizing the functional in respect do $\rho(\rr)$, by bringing it into the form $ \rho(\rr) = \sum_i \phi_i^*(\rr) \phi_i(\rr) $ while the wave functions are orthonormalised. 
+
+	
+	The solution of the Kohn-Sham equation gives rise to the total ground state energy as 
+%	The Kohn-Sham equations are evaluated by variating the exchange-correlation functional. This will give us a ground-state functional which looks like this
+	\begin{equation} \label{ground-state_functional}
+		E_0 [\rho_0] = E_{\text{nucl}} + E_{\text{kin}} + E_\text{H} + E_{\text{xc}} 
+	\end{equation}
+	including the potential of the electron-nuclei interaction, the kinetic energy, the Hartree potential and the exchange-correlation functional.
+	
+	\subsubsection{Approximations for the exchange-correlation functional} \label{xc-func}
+%		The last one in equation \eqref{ground-state_functional} must be approximate while the other parts can be well calculated.
+		In contrast to the other functionals on the left side in eq. \eqref{ground-state_functional}, the exchange-correlation part is not known exactly, thus one has to think about some approximation schemas.
+		There are different kinds, the simplest one is the local density approximation (LDA) where 
+		\begin{equation}
+		E_{\text{xc}}^{\text{LDA}}[\rho] = \int \epsilon_{\text{xc}} (\rho(\rr)) \rho(\rr) \diff \rr
+		\end{equation} 
+		with the many-body exchange-correlation energy per electron $\epsilon_{xc}(\rho)$ of a uniform gas with density $\rho(\rr)$ of interacting electrons.
+		
+		In this thesis the Perdew-Burke-Ernzerhof (PBE) functional which is a generalized gradient approximation (GGA) has been used. It is a semilocal-density functional, which is not only dependent on the density at a position $\rr$. This functional is better for big molecules or systems.
+%		which means in comparison with LDA, it is better for big molecules or systems with more atoms. The PBE functional fulfills many of the physical and mathematical requirements of the DFT but is unsatisfactory for total energies of molecular systems \cite{PBE}.
+		
+		It is of the form:
+		\begin{equation}
+			E_{\text{xc}}^{\text{PBE}} = \int \diff^3 r \rho(\rr) 
+			\,\epsilon_{\text{xc}}^{\text{PBE}} (r_s (\rr), s(\rr), \zeta(\rr))
+		\end{equation}
+		where $r_s$ is the Wigner-Seitz radius, $\zeta$ is the spin polarization and the reduced density gradient $s=\frac{|\nabla \rho|}{2 k_F \rho}$ with $k_F = (3 \pi^2 \rho)^{\frac{1}{3}}$. 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "main_BA2.0"
+%%% End:

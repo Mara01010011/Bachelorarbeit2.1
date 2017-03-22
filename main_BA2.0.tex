@@ -1,0 +1,148 @@
+\documentclass[english, a4, 12pt]{scrartcl}
+\input{config_BA2.0.tex}
+
+%hilfmittelende
+
+\begin{document}
+\numberwithin{equation}{section}
+
+	\begin{titlepage}
+		\begin{minipage}[c][\textheight][c]{\textwidth}
+			\begin{center}
+				{ \Huge\textbf{Evolution of topological surface} }
+				
+				\vspace*{0.3cm}
+				{ \Huge \textbf{states of thin HgTe-films with film} }
+				
+				\vspace*{0.3cm}
+				{ \Huge \textbf{thickness} }
+				
+				\vspace*{1.5cm}
+				{\Large \textbf{Bachelor thesis}}
+				
+				\vspace*{.7cm}
+				{\Large Verfasst von Tamara Szecsey}
+				
+				\vspace*{.5cm}
+				{\large \today}
+				
+				\vspace*{1cm}
+				\hspace*{1cm} \includegraphics[height=30ex]{andere_bilder/urlogo}
+				
+				\vspace*{1cm}
+				{\large Univeristät Regensburg}
+				
+				\vspace*{.3cm}
+				{\large Fakultät Physik}	
+							
+				\vspace*{.3cm}
+				{\large Im Bereich theoretischer Festkörperphysik}
+				
+				\vspace*{.7cm}
+				{\large Unter der Betreuung von}	
+				
+				\vspace*{.3cm}
+				{\large Prof. Dr. Ferdinand Evers}
+				
+				\vspace*{.3cm}
+				{\large und}	
+				
+				\vspace*{.3cm}
+				{\large Maria Camarasa-Gomez}									
+			\end{center}
+		\end{minipage}
+	\end{titlepage}
+
+\thispagestyle{empty}
+Ich habe die Arbeit selbständig verfasst, keine anderen als die angegebenen Quellen und Hilfsmittel benutzt und bisher keiner anderen Prüfungsbehörde vorgelegt. Außerdem bestätige ich hiermit, dass die vorgelegten Druckexemplare und die vorgelegte elektronische Version der Arbeit identisch sind, dass ich über wissenschaftlich korrektes Arbeiten und Zitieren aufgeklärt wurde und dass ich von den in § 24 Abs. 5 vorgesehenen Rechtsfolgen Kenntnis habe. 
+\newpage
+\thispagestyle{empty}
+\tableofcontents	
+\clearpage	
+\setcounter{page}{1}
+\section{Introduction}
+	During the last ten years, topological insulators were the most examined topic in condensed matter physics. These materials are insulating in their interior, also known as the bulk, but possess conducting surface states. This quality makes it very exotic and attractive for potential applications. Therefore big effort was made in order to find materials of this kind. One of these is HgTe for which we studied the evolution of topological surface states in this thesis \cite{top_surf_states}. 
+	
+	More explicit, we concentrate us on the topological surface states in the surface growing direction (001). We approach this problem by performing ab-initio calculations, in detail, we used density functional theory (DFT) through the commercial package FHI-aims. 
+	
+	By combining the supercell approach and the projected bulk band structure we observe how sensitive the energy band structure, as well as the surface states react on different thicknesses and terminations of the slabs. 
+	Additionally we thus will see the evolution of the surface states in this material regarding the (001) plane. 
+	
+	This thesis is divided into five parts: In part one we give an introduction of the main topic. In part two we give an explanation of the theoretical background including the concept of topological insulators, the basic principles for numeric modeling of surfaces by applying density functional theory and the origins of spin-orbit interaction in solid state matter.
+	In part three of this thesis we present the results of our calculations for the slab band structure of HgTe with various thicknesses and in cases of ideal and passivated surfaces.
+	In part four we interpret those results. And finally in part five we close this thesis by conclusions. 
+		
+%	This thesis treats a new field in condensed matter physics which was first identified by J. M. Kosterlitz and D. J. Thouless in 1972 which received the Nobel prize \cite{nobel_prize} in 2016 for topological phases of matter, in other words, the transfer of the mathematical concept of topology into condensed matter physics. 
+%	
+%	Then this concept was further investigated until the two-dimensional topological insulators (TIs) where introduced by Kane and Mele. These specific insulators form a new quantum state of matter and enjoys great interest in condensed matter physics because of it's exotic properties and potential applications. 
+%	
+%	One topological insulator, that could be observed due to it's big band gaps, was HgTe as quantum well. This material has an inverted band structure due to the spin momentum locking in tellurium (Te) and to the spin-orbit coupling correction in the bands of mercury (Hg), which distinguishes it from normal insulators. 
+%	
+%	But the concept of TIs can also be transfered to the three-dimensional space, which was examined in this thesis for very thin layers of HgTe. The observations were made by a computational method: the DFT-PBE method, calculated by the program FHI-aims, version 081912 for calculations without spin-orbit coupling, meaning k-grid and lattice constant study, and version 160328\_3 for calculations with spin-orbit coupling.
+%	
+%	The thesis is divided in five parts, the introduction, the theory, which includes closer explanations of the topological insulators, fundamental knowledge about crystals and solid state matter, introduction into the surface modeling in computational physics, the density functional theory and the spin-orbit coupling. The third part includes the results of the calculations, including the simulated growth of the HgTe crystal in z-direction. The band structures and the density functional gives informations about the band inversion property and occupation number in the HgTe slab. In the end there is a section interpreting the results and the conclusion which closes this thesis. 
+	
+\FloatBarrier
+\section{Theory}
+	\subsection{Topological insulators}
+	\input{topological_insulators} \label{topological_insulator}
+	
+	\subsection{Description of a crystal structure}
+	\input{Solid_State_Physics_concepts}
+	
+	\subsection{Basics of Density Functional Theory}
+	\input{dft}
+	
+	\subsection{Spin-orbit coupling} \label{chapter_soc}
+	\input{spin-orbit_coupling}
+\section{Results}
+	\subsection{Input for FHI-aims} \label{FHI-aims}
+	\input{FHI-aims}
+	
+	\FloatBarrier
+	\subsection{The lattice constant and the k-grid} \label{lattice_k-grid}
+	\input{lattice_constant_kgrid_Result}
+	
+	\subsection{The bulk band structure in the first 3D Brillouin zone}
+	\input{bulk_band_structure}
+	
+	\subsection{Projected bulk band structure}
+	\input{bulk_projected_band_structures}
+	
+%	\FloatBarrier
+%	\subsection{Density of states}
+%	\input{density_of_states}
+%	 - What are you using as the Brillouin zone? How is your crystal? 
+%	 - Reconstruction of the surface and what this means.
+%	 - Talk about aims.
+%	 - Show your results and how you got them:    
+%	 Lattice convergence, k-grid study, etc.
+%	 Band structures for the bulk
+%	 Band structures for the surfaces (Put the comparison as well I mentioned previously with the atoms in the top moved and mention why you are doing this).
+\FloatBarrier
+\section{Interpretation of the results}	
+\input{Interpretation}	
+%	 Here you have to explain all what I indicated in the previous emails. (Don't forget about the DOS): How are the bulk band structure and the band structures for the surfaces related?
+\section{Conclusion}
+	In this thesis we performed ab-initio calculations for the dispersion energy in case of thin HgTe films with different thicknesses and terminations. These slabs were regarded as grown in the crystallographic (001) direction.
+	
+	We compared the bulk band structures in which we did or did not include the spin-orbit coupling and showed that band splitting can be observed by including the spin-orbit interactions.
+	The superimposing of the slab energy bands and the projected bulk band structure in (001) direction allowed us to identify the surface states and additionally to discuss the topological character of HgTe in that direction. 
+	After analyzing the surface band structure we discovered that, because of the dangling bonds at the surface, all of them are trivial surface states. 
+	
+	Finally we pointed out that for strained HgTe or for surface reconstruction of Hg- and Te-terminations the observation of topological surface states is possible. 
+%	In the first part of the results, the k-grid study converged as wanted, the lattice constant study had a minimum for higher k-grid so the lattice constant had been determined to 6.685 $\AA$. After this part, the band structure in the three-dimensional Brillouin zone for the bulk was calculated with and without spin-orbit coupling on the one hand for pointing out the difference between them, on the other hand for making sure that FHI-aims includes the spin-orbit coupling.
+%	
+%	Then the slab band structure were calculated in respect to the projected bulk band structure to identify the surface states and their development during the growth of the HgTe crystal. This was then complemented by the examination of the density of states in the same energy area. 
+%	
+%	On the whole all results were confirming existing studies and showed that the characteristic surface states of the topological insulator HgTe are visible for thin layers.
+\newpage
+\FloatBarrier
+\thispagestyle{empty}
+\printbibliography
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "main_BA2.0"
+%%% End:
