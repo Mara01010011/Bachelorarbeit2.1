@@ -30,7 +30,7 @@
 			\end{block}
 		\end{column}
 	\end{columns}
-	
+	\note{Besides from insulators and conductors, Kane and Mele 2005 found another class of material which is the so-called topological insulator. }
 \end{frame}
 
 \begin{frame}{Theory: Crystal and surface description part 1}
@@ -118,11 +118,11 @@
 				& \textbf{x} & \textbf{y} & \textbf{z}\\ 
 				\hline 
 				\vspace{0.2cm} 
-				$\boldsymbol{a}_1$ & $\frac{a}{\sqrt{2}}$  & 0 & 0 \\
+				$\boldsymbol{a}_1$ & $\frac{a}{\sqrt{2}}$  & $0$ & $0$ \\
 				\vspace{0.2cm}
-				$\boldsymbol{a}_2$ & 0 & $\frac{a}{\sqrt{2}}$ & 0 \\
+				$\boldsymbol{a}_2$ & $0$ & $\frac{a}{\sqrt{2}}$ & $0$ \\
 				\vspace{0.2cm}
-				$\boldsymbol{a}_3$ & 0 & 0 & $a$ 
+				$\boldsymbol{a}_3$ & $0$ & $0$ & $a$ 
 			\end{tabular}
 		}	
 		\end{column}
@@ -132,13 +132,13 @@
 				& \textbf{x} & \textbf{y} & \textbf{z}\\ 
 				\hline
 				\vspace{0.2cm} 
-				Te & 0 & 0 & 0 \\
+				Te & $0$ & $0$ & $0$ \\
 				\vspace{0.2cm}
-				Hg & $\frac{a}{2\sqrt{2}}$ & 0 & $\frac{a}{4}$ \\
+				Hg & $\frac{a}{2\sqrt{2}}$ & $0$ & $\frac{a}{4}$ \\
 				\vspace{0.2cm}
 				Te & $\frac{a}{2\sqrt{2}}$ & $\frac{a}{2\sqrt{2}}$ & $\frac{a}{2}$ \\
 				\vspace{0.2cm}
-				Hg & 0 & $\frac{a}{2\sqrt{2}}$ & $\frac{3a}{4}$
+				Hg & $0$ & $\frac{a}{2\sqrt{2}}$ & $\frac{3a}{4}$
 			\end{tabular}
 		}
 		\end{column}
@@ -185,8 +185,90 @@
 	\end{columns}
 \end{frame}
 
-\begin{frame}{Theory: DFT and SOC}
-	blub
+\begin{frame}{Theory: Density functional theory (DFT)}	
+	\begin{block}{First Hohenberg-Kohn Theorem:}
+		$\rho(\boldsymbol{r})$ can be uniquely converted into the $V_\text{ext}(\boldsymbol{r})$
+	\end{block}
+	\begin{block}<2->{Second Hohenberg-Kohn Theorem:}
+		Ground state energy can be expressed in a density functional: \vspace{-.35cm}
+		\begin{equation*}
+		E^{\text{HK}}[\rho(\boldsymbol{r}); v_{\text{ext}}(\boldsymbol{r})] = 
+		T_0 [\rho] + V_\text{H} [\rho] + \int v_{\text{ext}}(\boldsymbol{r}) \rho(\boldsymbol{r}) \diff \boldsymbol{r} + E_{\text{xc}} [\rho]
+		\end{equation*}
+	\end{block}
+	\begin{block}<3->{Kohn-Sham equation}
+		Minimizing $E^{\text{HK}}$ $\rightarrow$ Kohn-Sham eigenfunctions $\boldsymbol{p}hi_i(\boldsymbol{r})$: \vspace{-.35cm}
+%		 and $\rho(\boldsymbol{r}) = \sum_i |\boldsymbol{p}hi_i(\boldsymbol{r})|^2$:
+		\begin{equation*} 
+		E_0 [\rho_0] = E_{\text{nucl}} + E_{\text{kin}} + E_\text{H} + E_{\text{xc}} 
+		\end{equation*}
+	\end{block}
+	\begin{block}<4->{Perdew-Burke-Ernzerhof (PBE) functional} \vspace{-.15cm}
+		\begin{equation*}
+		E_{\text{xc}}^{\text{PBE}} = \int \diff^3 r \rho(\boldsymbol{r}) 
+		\,\epsilon_{\text{xc}}^{\text{PBE}} (r_s (\boldsymbol{r}), s(\boldsymbol{r}), \zeta(\boldsymbol{r}))
+		\end{equation*}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Theory: Spin-orbit coupling}
+	\begin{columns}<2->
+		\begin{column}{.5\linewidth}
+			Dirac equation:
+		\end{column}\hspace{-3.3cm}
+		\begin{column}{.7\linewidth}
+			\begin{equation*}
+			\left(
+			c \boldsymbol\alpha \cdot \boldsymbol{p} + c^2(\beta - 1) + V
+			\right) \Psi = \epsilon \Psi
+			\end{equation*}
+		\end{column}
+	\end{columns}
+	\begin{columns}<3->
+		\begin{column}{.6\linewidth}
+			Separate $\Psi$ into two spinors:
+		\end{column}\hspace{-5cm}
+		\begin{column}{.4\linewidth}
+			\begin{equation*}
+			\Psi = 
+			\begin{pmatrix}
+			\Psi_L \\ \Psi_S
+			\end{pmatrix}
+			\end{equation*}	
+		\end{column}
+	\end{columns}
+	\begin{columns}<4->
+		\begin{column}{\linewidth}
+			Substitute and dissolve:
+			\begin{align*}
+			\left(
+			\boldsymbol{p} \frac{c^2}{2c^2 + \epsilon - V} \boldsymbol{p} 
+			+ i \boldsymbol{p} \frac{c^2}{2c^2 + \epsilon - V} \times \boldsymbol{p} \cdot \boldsymbol{\sigma} 
+			+ V 
+			\right) \Psi_L 
+			&= \epsilon \Psi_L	
+			\end{align*}
+		\end{column}
+	\end{columns}
+	\vspace{.3cm}
+	\begin{columns}<6->
+		\begin{column}{\linewidth}
+			First part with $V$ is relativistic Schrödinger equation.
+		\end{column}
+	\end{columns}
+	\begin{columns}<7->
+		\begin{column}{\linewidth}
+			Expanding in $\frac{\epsilon - V}{2c^2}$ in zeroth order gives non-relativistic Schrödinger equation. 
+		\end{column}
+	\end{columns}
+	\begin{columns}<8->
+		\begin{column}{\linewidth}
+			Expanding just second part in first order gives:
+			\begin{equation*}
+			V_{SOC} = \frac{i}{4c^2} \boldsymbol{p} V \times \boldsymbol{p} \cdot \boldsymbol{\sigma}
+			\end{equation*}
+		\end{column}
+	\end{columns}
 \end{frame}
 
 %%% Local Variables:

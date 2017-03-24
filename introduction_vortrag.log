@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.15)  24 MAR 2017 17:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.15)  24 MAR 2017 20:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -534,7 +534,7 @@ Things are pretty mixed up, but I think the worst is over.
 
 ! Undefined control sequence.
 l.25 	\note
-           {HgTe belongs to the class of mercury-based II-VI semiconductors ...
+           {HgTe belongs to the class of mercury-based II-VI(6) semiconducto...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -582,6 +582,9 @@ Missing character: There is no I in font nullfont!
 Missing character: There is no - in font nullfont!
 Missing character: There is no V in font nullfont!
 Missing character: There is no I in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no ) in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no m in font nullfont!
