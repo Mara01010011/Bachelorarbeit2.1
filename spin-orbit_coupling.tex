@@ -18,7 +18,7 @@
 %	does not consider the spin,	an other equation needs to be regarded: The Dirac-equation:
 	\begin{equation} \label{Dirac_equation}
 		\left(
-			c \boldsymbol\alpha \cdot \p + c^2(\beta - 1) + V) 
+			c \boldsymbol\alpha \cdot \p + c^2(\beta - 1) + V
 		\right) \Psi = \epsilon \Psi
 	\end{equation}
 %	which is a relativistic four-dimensional equation. It is modeling electrons and positrons in a superposition state $\Psi$ with the Dirac matrices 
@@ -58,7 +58,7 @@
 %	For getting the full potential is normally in need of quantum-electrodynamic treatment, but for quantum chemistry and condensed matter physics, this can be cut down to the Coulomb and Breit terms \cite{tutorial2} where the latter will not be regarded further in this case because it is neglectable.
 %	
 %	The solutions for electrons for \ref{Dirac_equation} are positive energies and are obtained by separating $\Psi$ into a two-dimensional large component $\Psi_L$ and a two-dimensional small component $\Psi_S$, where the first one corresponds to spin-up and spin-down electrons and the second to spin-up and -down positrons
-	It is essential to solve the equation which includes the coupling of all $\Psi$ components. Fortunately in condensed matter systems it is possible to expand eq.\eqref{Dirac_equation} in terms of $\frac{v}{c}$ and get a simpler non-relativistic equation which is still quite precise.
+	It is essential to solve the equation that includes the coupling of all $\Psi$ components. Fortunately in condensed matter systems it is possible to expand eq.\eqref{Dirac_equation} in terms of $\frac{v}{c}$ and get a simpler non-relativistic equation which is still quite precise.
 	In order to do so, we separate $\Psi$ into two components, the 'larger' $\Psi_L$, which dominates for the non-relativistic limit, has positive energies and therefore represents the electron and the 'smaller' $\Psi_S$ component with negative energies and which represents a positron. 
 	\begin{equation}
 		\Psi = 
@@ -179,7 +179,7 @@ we obtain
 		\right) \Psi_L 
 		&= \epsilon \Psi_L	
 	\end{align}
-	This equation is similar to the Schrödinger equation and is now quadratic in the momentum $\boldsymbol p$. For the scalar relativistic case, FHI-aims solves \eqref{SOC_equation} without including the second term. This term is corrected in respect to the kinetic energy and is called the \textit{scalar} relativistic Schrödinger equation. 
+	This equation is similar to the Schrödinger equation and is now quadratic in the momentum $\boldsymbol p$. For the scalar relativistic case, FHI-aims solves eq. \eqref{SOC_equation} without including the second term. This term is corrected in respect to the kinetic energy and is called the \textit{scalar} relativistic Schrödinger equation. 
 %This equation includes the Schrödinger equation in the relativistic case, which FHI-aims uses if one includes \texttt{relativistic} together with the atomic ZORA, but has no spin dependence. It is the first term together with the potential $V$, but regarded for $\epsilon = 0$ and in the free-atom potential of the nearest atom. 
 	The well-known Schrödinger equation can be recovered by expanding eq. \eqref{SOC_equation} to lowest order in $(\epsilon - V)/2c^2$. Indeed,
 %The non-relativistic case can be obtained by expanding \eqref{SOC_equation} in the zeroth order of $(\epsilon - V)/2c^2$, which in this case is nothing else like $c\rightarrow \infty$
@@ -198,7 +198,7 @@ we obtain
 	\end{align}
 
 %The second term in \eqref{SOC_equation} is the spin-orbit coupling part. It can be evolved by expand it's Taylor series to lowest, not disappearing order in $x = (\epsilon - V)/2c^2$ where $\epsilon$ is also set to zero.
-	Now let us consider the lowest non-trivial order of corrections coming from the second term in \eqref{SOC_equation} by using the Taylor series of the geometric series:
+	Now let us consider the lowest non-trivial order of corrections coming from the second term in eq. \eqref{SOC_equation} by using the Taylor series of the geometric series:
 	\begin{align}
 		f(x)=& \frac{1}{1+x} \\
 		\text{Taylor series to first order:}& ~f(a) + \frac{f'(a)}{1!} (x-a)  \\
@@ -216,10 +216,10 @@ we obtain
 	\begin{align}
 		V_{SOC} = \frac{i}{4c^2} \p V \times \p \cdot \boldsymbol{\sigma}.
 	\end{align}
-	Relativistic effects don't need to be considered for structures with light atoms, if the electron is not near the nuclei. But if a structure contains heavy elements, like HgTe, it is necessary since spin-orbit also affects valence electrons.
+	Relativistic effects don't need to be considered for structures with light atoms, if the electron is not near the nuclei. But if a structure contains heavy elements, like HgTe, it is necessary since spin-orbit interaction also affects valence electrons.
 %those effects no longer just occur near the nuclei. It additionally spreads out into the valence region. 
 
-	Finally, we would like to point out that the actual calculation of FHI-aims, 
+	Finally, we would like to point out that the actual spin-orbit coupling calculation of FHI-aims 
 	is not considered self-consistently but is applied only after the self-consistent cycle of the density has converged.
 %	the spin-orbit coupling is not included into the calculations of the band structure and energies, and is applied after the self-consistency circle converged. It is an perturbative method.
 
@@ -234,11 +234,12 @@ we obtain
 	Beginning with the non-relativistic Schrödinger equation, the eigenstates with angular momentum $\ell$ and the spin $s$ can be written as a tensor product of a spatial function and a spin function, the spinor. For certain states, for example the s,p,d, etc. states for spherically symmetric potential, a particular symmetry of an external potential result in a particular banding of eigenvalues and symmetries between eigenvectors. 
 %	This is known as the irreducible representations of the single group in group theory. 
 	
-	Adding the scalar-relativistic which brings us to the Schrödinger equation made out of the first part in \ref{SOC_equation} plus the $V$, the symmetry of the system doesn't change, but the Hamiltonian does. That means, that the eigenvalue of single electrons change, but the banding does not. 
+	Adding the scalar-relativistic which brings us to the Schrödinger equation made out of the first part in eq. \eqref{SOC_equation} plus the $V$, the symmetry of the system doesn't change, but the Hamiltonian does. That means, that the eigenvalue of single electrons change, but the banding does not. 
 	
 	Turning on the spin-orbit coupling leads to a conservation of the total angular momentum $j=\ell + s$, but angular momentum and spin are no longer separately conserved. 
 %	There are even no spin-up and spin-down eigenstates. Hence the single group symmetry, which was explained above, is broken. The Kramer's theorem explains that as long as time-reversal symmetry is conserved, the single electron states are double degenerated. 
-	Consequently, the degeneracy in the spin quantum number might be lifted by the spin-orbit interaction and the bands might split (in some situations, some bands might still present accidental degeneracies)
+%	Consequently, the degeneracy in the spin quantum number might be lifted by the spin-orbit interaction
+%	and the bands might split (in some situations, some bands might still present accidental degeneracies).
 	As a consequence, it is possible that the degeneracy in the spin quantum number is been reinforced by the spin-orbit coupling, so that the bands might split up. But note, that sometimes, some bands can still have coincidental degeneracies. 
 %	This degeneracy leads to the band splitting due to the spin-$1/2$ character of the electron and the Zeeman effect which comes into account because of  the form of the SOC-operator.
 	If the band splitting is very strong, some bands can even get inverted.

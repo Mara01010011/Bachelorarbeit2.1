@@ -3,6 +3,7 @@
 
 
 @Article{Bansil,
+  Title                    = {Colloquium: Topological band theory},
   Author                   = {A. Bansil et al.},
   Journal                  = {Rev. Mod. Phys.},
   Year                     = {2016},
@@ -11,6 +12,21 @@
 
   Owner                    = {tamara},
   Timestamp                = {2017.03.16}
+}
+
+@Article{top_surf_states,
+  Title                    = {Engineering Topological Surface States: HgS, HgSe, and HgTe},
+  Author                   = {F. Virot et al.},
+  Journal                  = {Phys.
+Rev. Letters},
+  Year                     = {2013},
+
+  Month                    = {Oct.},
+  Number                   = {146803},
+  Volume                   = {111},
+
+  Owner                    = {tamara},
+  Timestamp                = {2017.03.07}
 }
 
 @Article{2D_top_ins,
@@ -26,6 +42,7 @@
 }
 
 @Article{HgTe_structure_001,
+  Title                    = {Ab initio study of topological surface states of strained HgTe},
   Author                   = {S.-C. Wu et al.},
   Journal                  = {epljournal},
   Year                     = {2014},
@@ -48,6 +65,7 @@
 }
 
 @Article{Qi,
+  Title                    = {Inducing a Magnetic Monopole with Topological Surface States},
   Author                   = {X.-L. Qi et al.},
   Journal                  = {Science},
   Year                     = {2009},
@@ -59,6 +77,8 @@
 }
 
 @MastersThesis{Chalmers,
+  Title                    = {First principle calculation of NO x
+adsorption on ATiO 3 perovskites surfaces},
   Author                   = {B. Abrahamsson},
   School                   = {Chalmers University of Technology},
   Year                     = {2015},
@@ -68,12 +88,14 @@
 }
 
 @Article{Bernevig,
+  Title                    = {Quantum Spin Hall Effect},
   Author                   = {B.A. Bernevig and S.C. Zhang},
   Journal                  = {Physical Review Letters},
   Year                     = {2006},
   Number                   = {106802},
   Volume                   = {96},
 
+  Doi                      = {10.1103/PhysRevLett.96.106802},
   Owner                    = {tamara},
   Timestamp                = {2017.03.17}
 }
@@ -87,17 +109,20 @@
 }
 
 @Article{Kane_Mele1,
+  Title                    = {Quantum Spin Hall Effect in Graphene},
   Author                   = {C. L. Kane, E. J. Mele},
   Journal                  = {Phys. Rev. Lett.},
   Year                     = {2005},
   Number                   = {226801},
   Volume                   = {95},
 
+  Doi                      = {10.1103/PhysRevLett.95.226801},
   Owner                    = {tamara},
   Timestamp                = {2017.03.01}
 }
 
 @Article{Kane_Mele2,
+  Title                    = {Z2 Topological Order and the Quantum Spin Hall Effect},
   Author                   = {C. L. Kane, E. J. Mele},
   Journal                  = {Phys. Rev. Lett.},
   Year                     = {2005},
@@ -106,21 +131,6 @@
 
   Owner                    = {tamara},
   Timestamp                = {2017.03.01}
-}
-
-@Article{top_surf_states,
-  Title                    = {Engineering Topological Surface States: HgS, HgSe, and HgTe},
-  Author                   = {F. Virot, R. Hayn,M. Richter, J. v. d. Brink},
-  Journal                  = {Phys.
-Rev. Letters},
-  Year                     = {2013},
-
-  Month                    = {Oct.},
-  Number                   = {146803},
-  Volume                   = {111},
-
-  Owner                    = {tamara},
-  Timestamp                = {2017.03.07}
 }
 
 @Book{solid_state_book,
@@ -155,6 +165,9 @@ Rev. Letters},
 }
 
 @MastersThesis{Graz,
+  Title                    = {Shockley Surface States
+from
+First Principles},
   Author                   = {D. W. Knebl},
   School                   = {Karl-Franzens-Universität Graz},
   Year                     = {2013},
@@ -227,8 +240,8 @@ Rev. B},
   Title                    = {Tutorial II: Periodic systems
 Manuscript for Exercise Problems},
 
-  Author                   = {Sebastian Kokott, Franz Knuth, Lydia Nemec,
-Björn Bieniek, Björn Lange, and William Huh},
+  Author                   = {S. Kokott, F. Knuth, L. Nemec,
+B. Bieniek, B. Lange, and W. Huh},
 
   Owner                    = {tamara},
   Timestamp                = {2017.02.23},
@@ -273,6 +286,12 @@ Björn Bieniek, Björn Lange, and William Huh},
   Owner                    = {tamara},
   Timestamp                = {2017.03.15},
   Url                      = {https://aimsclub.fhi-berlin.mpg.de/}
+}
+
+@Misc{applications,
+  Owner                    = {tamara},
+  Timestamp                = {2017.03.23},
+  Url                      = {http://spectrum.ieee.org/nanoclast/semiconductors/materials/topological-insulators-move-closer-to-practical-applications}
 }
 
 @Misc{closed_shell,

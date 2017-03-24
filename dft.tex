@@ -21,7 +21,7 @@
 		\text{with} ~v_{\text{ext}}(\rr) &= V_{\text{nucl}}(\rr)= -\sum_I \frac{z_I e^2}{|\rr - \R_I|}
 	\end{align}	
 	where $e$ is the elementary charge.
-	The external potential $V_{ext}$ contains the interaction between each proton $I$ in the nuclei whereby $z_I$ is the number of all protons in the nuclei, and each electron $i$, $v_{ext}(\rr)$ is therefore the external potential for a single electron in the potential background of a nuclei. 
+	The external potential $V_{ext}$ contains the interaction between each proton $I$ in the nuclei whereby $z_I$ is the number of all protons in the nuclei and each electron $i$. $v_{ext}(\rr)$ is therefore the external potential for a single electron in the potential background of a nuclei. 
 %	The ground-state $\Psi_\text{G}(\rr_1,\dots,\rr_N)$ of many electrons just depends on the external potential $v_{\text{ext}}(\rr)$. And the one-body ground-state density $\rho(\rr)$ can be defined as 
 
 	If $\Psi_G(\rr_1,\dots,\rr_N)$ is the wave function of the ground state in the many body Schrödinger equation
@@ -71,7 +71,7 @@
 		V_\text{H}[\rho]= \frac{1}{2} \sum_{i,j} \braket{\phi_i \phi_j| \frac{e^2}{|\rr_i-\rr_j|} |\phi_i \phi_j}.
 	\end{equation}
 	
-	Until now, we didn't get anything useful. However the original problem was cleverly rewritten in a way, that the minimization of $E^\text{KH}$ produces the so-called Kohn-Sham equations. These are the effective one-particle equations which are Schrödinger-like. Their eigenfunctions are called Kohn-Sham orbitals $\phi_i(\rr)$ which depend on the particle density $\rho(\rr) = \sum_i |\phi_i(\rr)|^2$.
+	Until now, we didn't get anything useful. However the original problem was cleverly rewritten in a way, that the minimization of $E^\text{HK}$ produces the so-called Kohn-Sham equations. These are the effective one-particle equations which are Schrödinger-like. Their eigenfunctions are called Kohn-Sham orbitals $\phi_i(\rr)$ which depend on the particle density $\rho(\rr) = \sum_i |\phi_i(\rr)|^2$.
 %	Now , the Kohn-Sham equations are minimizing the functional in respect do $\rho(\rr)$, by bringing it into the form $ \rho(\rr) = \sum_i \phi_i^*(\rr) \phi_i(\rr) $ while the wave functions are orthonormalised. 
 
 	
@@ -99,7 +99,7 @@
 			E_{\text{xc}}^{\text{PBE}} = \int \diff^3 r \rho(\rr) 
 			\,\epsilon_{\text{xc}}^{\text{PBE}} (r_s (\rr), s(\rr), \zeta(\rr))
 		\end{equation}
-		where $r_s$ is the Wigner-Seitz radius, $\zeta$ is the spin polarization and the reduced density gradient $s=\frac{|\nabla \rho|}{2 k_F \rho}$ with $k_F = (3 \pi^2 \rho)^{\frac{1}{3}}$. 
+		where $r_s$ is the Wigner-Seitz radius, $\zeta$ is the spin polarization and the reduced density gradient is $s=\frac{|\nabla \rho|}{2 k_F \rho}$ with $k_F = (3 \pi^2 \rho)^{\frac{1}{3}}$. 
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "main_BA2.0"

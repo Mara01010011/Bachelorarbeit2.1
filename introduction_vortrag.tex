@@ -1,4 +1,4 @@
-\begin{frame}{Introduction}\section{Introduction}
+\begin{frame}{Introduction}
 		HgTe is a II-VI semiconductor and a topological insulator (TI).\footfullcite{top_surf_states}
 		\vspace{10px}
 	\begin{columns} 
@@ -26,10 +26,12 @@
 	A topological insulator is a material which is insulating in its interior, also called the bulk of a material, and that develops conducting states at the surface.\\
 	They are very attractive for potential applications because the spin and the momentum of the electrons at the conducting surfaces are locked. This means, the spin is always perpendicular to the direction of motion of those electrons.
 	The spin-momentum locking make sure that the surfaces are protected if time-reversal symmetry preserved. In other words the surface states remain even for non-magnetic impurities.\\}
-	\begin{center}
+	\begin{columns}
+		\begin{column}<6->{\linewidth}
 		Calculations were performed using density functional theory (DFT) through FHI-aims.
-	\end{center}	
-	\begin{columns}<6->
+		\end{column}
+	\end{columns}	
+	\begin{columns}<7->
 		\begin{column}{0.1\linewidth}
 			\vspace{9px}
 			$0.5 \unit{nm}~\approx$
@@ -46,7 +48,7 @@
 	\note{The calculations I performed were ab-initio calculations and therefore I used the density functional theory with the exchange-correlation function method PBE, which is short for Perdew-Burke-Ernzerhof through FHI-aims.\\}
 	\note{HgTe was examined in thin films from approximately 0.5 nm to 2.7 nm, which are 4 to 17 layers of atoms. Surfaces can only be examined in one direction at once. Because otherwise it would went beyond the scope of a bachelor thesis, we chose just direction of observance, namely the (001) direction. \\
 	The main goal this thesis pursued was examining the evolution of topological surface states for different slab thicknesses. Therefore I will now explain the theory behind the realization of this examination.}
-	\begin{block}<7->{}
+	\begin{block}<8->{}
 		Main goal: Evolution of surface states in different slab thicknesses.
 	\end{block}
 \end{frame}

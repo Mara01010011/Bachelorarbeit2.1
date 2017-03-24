@@ -17,12 +17,12 @@
 		\overline{\text{J}} \rightarrow \overline{\Gamma} \rightarrow \overline{\text{K}} \rightarrow \overline{\text{J}}
 	\end{align}
 	The band structure for the slabs will look different for different terminations of the surface while we follow the same path along the high symmetry points.
-	The lines which lie in the gap are energy bands corresponding to surface states, which can be trivial surface states or topological surfaces states. 
+	The lines which lie in the gap are energy bands corresponding to surface states, which can be trivial surface states or topological surface states. 
 %	to see the band structure of all connections and the Gamma in the middle because thats the most interesting symmetry point for HgTe. 
 %	Unfortunately, FHI-aims always applies periodic boundary conditions, but there is still a possibility to omit that problem. 
-	In practical terms, we proceed by exchanging the $k_z$ in output instructions in the control.in file by different values. 
+	In practical terms, we proceed by exchanging the $k_z$ output instructions in the control.in file by different values. 
 %	First of all, the \kk-grid is now $k_x$, $k_y$ and 1. In the band structure output part of the control.in, the high symmetry points must be inserted like in \eqref{2D-BZ-points} but the last component, the $k_z$, must be adjusted for the bulk calculations.
-	In sufficient small steps $k_z$ goes from $k_z=0$ to $k_z=k_{z,\text{max}}$, with $k_{z,\text{max}} = \frac{\pi}{a}$ where $a$ is the lattice constant. This value of the kz corresponds to the edge of the first BZ.
+	In sufficient small steps $k_z$ goes from $k_z=0$ to $k_z=k_{z,\text{max}}$, with $k_{z,\text{max}} = \frac{\pi}{a}$ where $a$ is the lattice constant. This value of the $k_z$ corresponds to the edge of the first Brillouin zone.
 %	which is half of the $z$-component of the reciprocal vector $b_3$ in \eqref{fcc_reciprocal_vectors}, which is the edge of the first Brillouin zone. It emerged that 40 slices are enough to get a nice plot. 
 	
 %	For the calculations with the supercells, $k_z$ must be set to 0 because otherwise the boundary condition in that direction is wrong considered by FHI-aims.
@@ -144,7 +144,7 @@
 		\begin{subfigure}[c]{.48\linewidth}
 			\centering
 			\includegraphics[width=\linewidth]{Te_termination/bulk+5_layers_no_dos_-2_2.pdf}
-			\caption{5 layers with hydrogens on the bottom passivating one of the Te surfaces terminations}
+			\caption{5 layers with hydrogens on the bottom passivating one of the Te surface terminations}
 		\end{subfigure}
 		\begin{subfigure}[c]{.48\linewidth}
 			\centering
@@ -155,7 +155,7 @@
 		\begin{subfigure}[c]{.48\linewidth}
 			\centering
 			\includegraphics[width=\linewidth]{Te_termination/bulk+9_layers_no_dos_-2_2.pdf}
-			\caption{9 layers with hydrogens on the bottom passivating one of the Te surfaces terminations}
+			\caption{9 layers with hydrogens on the bottom passivating one of the Te surface terminations}
 		\end{subfigure}
 		\begin{subfigure}[c]{.48\linewidth}
 			\centering 
@@ -166,7 +166,7 @@
 		\begin{subfigure}[c]{.48\linewidth}
 			\centering
 			\includegraphics[width=\linewidth]{Te_termination/bulk+17_layers_no_dos_-2_2.pdf}
-			\caption{17 layers with hydrogens on the bottom passivating one of the Te surfaces terminations}
+			\caption{17 layers with hydrogens on the bottom passivating one of the Te surface terminations}
 		\end{subfigure}
 		\caption{PBBS and surface band structure for symmetric Te termination on both surfaces of the slab} 
 		\label{bulk+surface_odd_layers_Te}

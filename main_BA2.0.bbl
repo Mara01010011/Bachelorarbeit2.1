@@ -16,6 +16,13 @@
   {}
 \endgroup
 
+\entry{applications}{misc}{}
+  \verb{url}
+  \verb http://spectrum.ieee.org/nanoclast/semiconductors/materials/topological
+  \verb -insulators-move-closer-to-practical-applications
+  \endverb
+\endentry
+
 \entry{wiki_top_ins}{misc}{}
   \verb{url}
   \verb https://en.wikipedia.org/wiki/Topological_insulator#/media/File:Topolog
@@ -47,9 +54,29 @@
   \strng{fullhash}{aABe1}
   \field{sortinit}{A}
   \field{number}{021004}
+  \field{title}{Colloquium: Topological band theory}
   \field{volume}{88}
   \field{journaltitle}{Rev. Mod. Phys.}
   \field{year}{2016}
+\endentry
+
+\entry{top_surf_states}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {al.}{a.}%
+     {F.~Virot}{F.~V.}%
+     {et}{e.}%
+     {}{}}%
+  }
+  \strng{namehash}{aFVe1}
+  \strng{fullhash}{aFVe1}
+  \field{sortinit}{A}
+  \field{number}{146803}
+  \field{title}{Engineering Topological Surface States: HgS, HgSe, and HgTe}
+  \field{volume}{111}
+  \field{journaltitle}{Phys. Rev. Letters}
+  \field{year}{2013}
+  \warn{\item Invalid format of field 'month'}
 \endentry
 
 \entry{HgTe_structure_001}{article}{}
@@ -67,6 +94,7 @@
   \verb 10.1209/0295-5075/107/57006
   \endverb
   \field{number}{57006}
+  \field{title}{Ab initio study of topological surface states of strained HgTe}
   \field{volume}{107}
   \field{journaltitle}{epljournal}
   \field{year}{2014}
@@ -106,7 +134,11 @@
   \strng{namehash}{BBZS1}
   \strng{fullhash}{BBZS1}
   \field{sortinit}{B}
+  \verb{doi}
+  \verb 10.1103/PhysRevLett.96.106802
+  \endverb
   \field{number}{106802}
+  \field{title}{Quantum Spin Hall Effect}
   \field{volume}{96}
   \field{journaltitle}{Physical Review Letters}
   \field{year}{2006}
@@ -140,7 +172,11 @@
   \strng{namehash}{CLKEJM1}
   \strng{fullhash}{CLKEJM1}
   \field{sortinit}{C}
+  \verb{doi}
+  \verb 10.1103/PhysRevLett.95.226801
+  \endverb
   \field{number}{226801}
+  \field{title}{Quantum Spin Hall Effect in Graphene}
   \field{volume}{95}
   \field{journaltitle}{Phys. Rev. Lett.}
   \field{year}{2005}
@@ -158,27 +194,10 @@
   \strng{fullhash}{CLKEJM1}
   \field{sortinit}{C}
   \field{number}{146802}
+  \field{title}{Z2 Topological Order and the Quantum Spin Hall Effect}
   \field{volume}{95}
   \field{journaltitle}{Phys. Rev. Lett.}
   \field{year}{2005}
-\endentry
-
-\entry{top_surf_states}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {F.~Virot}{F.~V.}%
-     {M.~Richter J. v. d.~Brink}{M.~R. J. v. d.~B.}%
-     {}{}%
-     {R.~Hayn}{R.~H.}}%
-  }
-  \strng{namehash}{FVRHMRJvdB1}
-  \strng{fullhash}{FVRHMRJvdB1}
-  \field{sortinit}{F}
-  \field{number}{146803}
-  \field{volume}{111}
-  \field{journaltitle}{Phys. Rev. Letters}
-  \field{year}{2013}
-  \warn{\item Invalid format of field 'month'}
 \endentry
 
 \entry{solid_state_book}{book}{}
@@ -228,6 +247,7 @@
   \strng{namehash}{KDW1}
   \strng{fullhash}{KDW1}
   \field{sortinit}{K}
+  \field{title}{Shockley Surface States from First Principles}
   \list{institution}{1}{%
     {Karl-Franzens-Universität Graz}%
   }
@@ -277,13 +297,13 @@
 \entry{tutorial2}{misc}{}
   \name{author}{2}{}{%
     {{}%
-     {Sebastian~Kokott}{S.~K.}%
-     {Lydia Nemec Björn Bieniek Björn~Lange}{L.~N. B. B. B.~L.}%
+     {S.~Kokott}{S.~K.}%
+     {L.~Nemec B. Bieniek B.~Lange}{L.~N. B. B. B.~L.}%
      {}{}%
-     {Franz~Knuth}{F.~K.}}%
+     {F.~Knuth}{F.~K.}}%
     {{}%
      {Huh}{H.}%
-     {William}{W.}%
+     {W.}{W.}%
      {}{}%
      {}{}}%
   }
@@ -295,28 +315,6 @@
   \verb http://th.fhi-berlin.mpg.de/sitesub/meetings/dft-workshop-2016/uploads/
   \verb Meeting/Tutorial_2_2016.pdf
   \endverb
-\endentry
-
-\entry{bulk_bs}{article}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Z.~W.~Lu}{Z.~W.~L.}%
-     {David~Singh}{D.~S.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Krakauer}{K.}%
-     {Henry}{H.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{ZWLDSKH1}
-  \strng{fullhash}{ZWLDSKH1}
-  \field{sortinit}{Z}
-  \field{number}{10154}
-  \field{volume}{39}
-  \field{journaltitle}{PhysRev B}
-  \field{year}{1989}
 \endentry
 
 \lossort

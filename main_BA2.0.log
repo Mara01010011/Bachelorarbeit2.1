@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.15)  20 MAR 2017 19:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.15)  23 MAR 2017 15:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1048,25 +1048,25 @@ Package biblatex Info: ... file 'main_BA2.0.bbl' found.
 (./main_BA2.0.bbl
 
 Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'HgTe_structure_001':
+(biblatex)                with 'top_surf_states':
 (biblatex)                - Invalid format of field 'month'.
 
 
 Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'top_surf_states':
+(biblatex)                with 'HgTe_structure_001':
 (biblatex)                - Invalid format of field 'month'.
 
 )
 Package biblatex Info: Reference section=0 on input line 6.
 Package biblatex Info: Reference segment=0 on input line 6.
- <andere_bilder/LOGO_UR.jpg, id=104, 593.3367pt x 427.5975pt>
-File: andere_bilder/LOGO_UR.jpg Graphic file (type jpg)
-
-<use andere_bilder/LOGO_UR.jpg>
-Package pdftex.def Info: andere_bilder/LOGO_UR.jpg used on input line 30.
-(pdftex.def)             Requested size: 215.07678pt x 155.00015pt.
+ <urlogo.pdf, id=104, 197.55807pt x 142.36186pt>
+File: urlogo.pdf Graphic file (type pdf)
+ <use urlogo.pdf>
+Package pdftex.def Info: urlogo.pdf used on input line 30.
+(pdftex.def)             Requested size: 215.09889pt x 155.00015pt.
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 53.
- (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 53.
@@ -1113,10 +1113,10 @@ Overfull \hbox (11.74983pt too wide) in paragraph at lines 10--54
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./andere_bilder/LOGO_UR.jp
-g>] [2]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./urlogo.pdf>] [2]
 LaTeX Font Info:    Try loading font information for T1+lmss on input line 60.
- (/usr/share/texmf/tex/latex/lm/t1lmss.fd
+
+(/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (./main_BA2.0.toc)
 \tf@toc=\write5
@@ -1126,25 +1126,25 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.86 \section
+l.91 \section
              {Theory} [1
 
 ] (./topological_insulators.tex
-<andere_bilder/band_structure_top_insulator.jpg, id=153, 436.63126pt x 404.2603
+<andere_bilder/band_structure_top_insulator.jpg, id=162, 436.63126pt x 404.2603
 1pt>
 File: andere_bilder/band_structure_top_insulator.jpg Graphic file (type jpg)
  <use andere_bilder/band_structure_top_insulator.jpg>
 Package pdftex.def Info: andere_bilder/band_structure_top_insulator.jpg used on
- input line 25.
+ input line 38.
 (pdftex.def)             Requested size: 179.24963pt x 165.95752pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.45 
+l.46 
       [2 <./andere_bilder/band_structure_top_insulator.jpg>])
 (./Solid_State_Physics_concepts.tex
-<andere_bilder/basis_2dim.png, id=169, 1482.53876pt x 528.97626pt>
+<andere_bilder/basis_2dim.png, id=174, 1482.53876pt x 528.97626pt>
 File: andere_bilder/basis_2dim.png Graphic file (type png)
 
 <use andere_bilder/basis_2dim.png>
@@ -1154,67 +1154,73 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.50 
-      [3] <andere_bilder/diamond.png, id=188, 664.4825pt x 664.4825pt>
+l.35 
+      [3 <./andere_bilder/basis_2dim.png>]
+<andere_bilder/diamond.png, id=192, 664.4825pt x 664.4825pt>
 File: andere_bilder/diamond.png Graphic file (type png)
 
 <use andere_bilder/diamond.png>
-Package pdftex.def Info: andere_bilder/diamond.png used on input line 60.
+Package pdftex.def Info: andere_bilder/diamond.png used on input line 51.
 (pdftex.def)             Requested size: 153.2617pt x 153.26373pt.
-
-<andere_bilder/millersche_indizes_less.png, id=190, 1419.3025pt x 520.94624pt>
+ [4 <./andere_bilder/diamond.png>]
+<andere_bilder/millersche_indizes_less.png, id=204, 1419.3025pt x 520.94624pt>
 File: andere_bilder/millersche_indizes_less.png Graphic file (type png)
 
 <use andere_bilder/millersche_indizes_less.png>
 Package pdftex.def Info: andere_bilder/millersche_indizes_less.png used on inpu
-t line 109.
+t line 118.
 (pdftex.def)             Requested size: 358.50612pt x 131.58757pt.
 
-<andere_bilder/zinc_blende.jpg, id=193, 521.95pt x 485.815pt>
+<andere_bilder/zinc_blende.jpg, id=208, 521.95pt x 485.815pt>
 File: andere_bilder/zinc_blende.jpg Graphic file (type jpg)
 
 <use andere_bilder/zinc_blende.jpg>
-Package pdftex.def Info: andere_bilder/zinc_blende.jpg used on input line 124.
+Package pdftex.def Info: andere_bilder/zinc_blende.jpg used on input line 129.
 (pdftex.def)             Requested size: 129.06378pt x 120.12653pt.
 
-<andere_bilder/zinc_blende_45degree.jpg, id=194, 446.66875pt x 408.52625pt>
+<andere_bilder/zinc_blende_45degree.jpg, id=209, 446.66875pt x 408.52625pt>
 File: andere_bilder/zinc_blende_45degree.jpg Graphic file (type jpg)
 
 <use andere_bilder/zinc_blende_45degree.jpg>
 Package pdftex.def Info: andere_bilder/zinc_blende_45degree.jpg used on input l
-ine 129.
+ine 134.
 (pdftex.def)             Requested size: 143.40518pt x 131.16118pt.
 
-<andere_bilder/001_plane_2.jpg, id=195, 431.6125pt x 431.6125pt>
+<andere_bilder/001_plane_2.jpg, id=210, 431.6125pt x 431.6125pt>
 File: andere_bilder/001_plane_2.jpg Graphic file (type jpg)
 
 <use andere_bilder/001_plane_2.jpg>
-Package pdftex.def Info: andere_bilder/001_plane_2.jpg used on input line 134.
+Package pdftex.def Info: andere_bilder/001_plane_2.jpg used on input line 139.
 (pdftex.def)             Requested size: 129.06378pt x 129.06325pt.
- [4 <./andere_bilder/basis_2dim.png>]
-[5 <./andere_bilder/diamond.png> <./andere_bilder/millersche_indizes_less.png> 
-<./andere_bilder/zinc_blende.jpg> <./andere_bilder/zinc_blende_45degree.jpg> <.
-/andere_bilder/001_plane_2.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 149--154
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--153
 
  []
 
-<andere_bilder/brillouin_zone_001_2.jpg, id=218, 433.62pt x 444.66125pt>
+[5 <./andere_bilder/millersche_indizes_less.png>] [6 <./andere_bilder/zinc_blen
+de.jpg> <./andere_bilder/zinc_blende_45degree.jpg> <./andere_bilder/001_plane_2
+.jpg>]
+<andere_bilder/brillouin_zone_001_2.jpg, id=237, 433.62pt x 444.66125pt>
 File: andere_bilder/brillouin_zone_001_2.jpg Graphic file (type jpg)
 
 <use andere_bilder/brillouin_zone_001_2.jpg>
 Package pdftex.def Info: andere_bilder/brillouin_zone_001_2.jpg used on input l
-ine 176.
+ine 221.
 (pdftex.def)             Requested size: 224.06548pt x 229.7732pt.
- [6] [7 <./andere_bilder/brillouin_zone_001_2.jpg>]
-<andere_bilder/hgte_16layer_supercell_2.jpg, id=241, 172.645pt x 903.375pt>
+
+<andere_bilder/hgte_16layer_supercell_2.jpg, id=239, 172.645pt x 903.375pt>
 File: andere_bilder/hgte_16layer_supercell_2.jpg Graphic file (type jpg)
 
 <use andere_bilder/hgte_16layer_supercell_2.jpg>
 Package pdftex.def Info: andere_bilder/hgte_16layer_supercell_2.jpg used on inp
-ut line 248.
+ut line 246.
 (pdftex.def)             Requested size: 80.66519pt x 422.09134pt.
- [8 <./andere_bilder/hgte_16layer_supercell_2.jpg>]) (./dft.tex
+ [7 <./andere_bilder/brillouin_zone_001_2.jpg>]) (./dft.tex [8 <./andere_bilder
+/hgte_16layer_supercell_2.jpg>]
 Overfull \hbox (1.9609pt too wide) in paragraph at lines 27--28
 []\T1/lmr/m/n/12 If $\OT1/lmr/m/n/12 	[]([][]\OML/lmm/m/it/12 ; [] ; [][]\OT1/l
 mr/m/n/12 )$ \T1/lmr/m/n/12 is the wave func-tion of the ground state in the ma
@@ -1226,8 +1232,8 @@ LaTeX Font Info:    Try loading font information for U+dsrom on input line 37.
 
 (/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-) [11] [12]
-[13]) [14] (./FHI-aims.tex
+) [11] [12])
+[13] (./FHI-aims.tex
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 5.
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1265,7 +1271,7 @@ Package pdftex.def Info: andere_bilder/lattice_constant_study_spin_none_no_soc.
 pdf used on input line 10.
 (pdftex.def)             Requested size: 215.10094pt x 161.32497pt.
 
-[15] <andere_bilder/kgrid_bulk.pdf, id=352, 642.4pt x 481.8pt>
+[14] <andere_bilder/kgrid_bulk.pdf, id=352, 642.4pt x 481.8pt>
 File: andere_bilder/kgrid_bulk.pdf Graphic file (type pdf)
 
 <use andere_bilder/kgrid_bulk.pdf>
@@ -1307,8 +1313,8 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 34--58
 []$  $[]$ 
  []
 
-[16 <./andere_bilder/plot_energies_hgte_bulk_all_kgrid_in_one.pdf> <./andere_bi
-lder/lattice_constant_study_spin_none_no_soc.pdf>] [17 <./andere_bilder/kgrid_b
+[15 <./andere_bilder/plot_energies_hgte_bulk_all_kgrid_in_one.pdf> <./andere_bi
+lder/lattice_constant_study_spin_none_no_soc.pdf>] [16 <./andere_bilder/kgrid_b
 ulk.pdf> <./andere_bilder/kgrid_1x1x4_layers.pdf> <./andere_bilder/kgrid_1x1x8_
 layers.pdf> <./andere_bilder/kgrid_1x1x16_layers.pdf>])
 (./bulk_band_structure.tex
@@ -1320,9 +1326,9 @@ Package pdftex.def Info: andere_bilder/plot_bulk_with_without_soc.pdf used on i
 nput line 27.
 (pdftex.def)             Requested size: 313.69029pt x 235.27538pt.
 )
-(./bulk_projected_band_structures.tex [18
+(./bulk_projected_band_structures.tex [17
 
- <./andere_bilder/plot_bulk_with_without_soc.pdf>] [19] <andere_bilder/0_bulk_-
+ <./andere_bilder/plot_bulk_with_without_soc.pdf>] [18] <andere_bilder/0_bulk_-
 12_10.pdf, id=463, 642.4pt x 481.8pt>
 File: andere_bilder/0_bulk_-12_10.pdf Graphic file (type pdf)
 
@@ -1458,10 +1464,6 @@ Package pdftex.def Info: Te_termination/bulk+17_layers_no_dos_-2_2.pdf used on
 input line 168.
 (pdftex.def)             Requested size: 215.10094pt x 161.32497pt.
 
-
-LaTeX Warning: Float too large for page by 29.8749pt on input line 173.
-
-
 <Hg_termination/no_H_bulk+5_layers_no_dos_-2_2.pdf, id=479, 642.4pt x 481.8pt>
 File: Hg_termination/no_H_bulk+5_layers_no_dos_-2_2.pdf Graphic file (type pdf)
 
@@ -1511,17 +1513,17 @@ File: Hg_termination/bulk+17_layers_no_dos_-2_2.pdf Graphic file (type pdf)
 Package pdftex.def Info: Hg_termination/bulk+17_layers_no_dos_-2_2.pdf used on 
 input line 207.
 (pdftex.def)             Requested size: 215.10094pt x 161.32497pt.
-) [20] [21 <./andere_bilder/0_bulk_-12_10.pdf> <./andere_bilder/4_bulk_-12_10.p
-df> <./andere_bilder/10_bulk_-12_10.pdf> <./andere_bilder/bulk_-12_10.pdf>] [22
+) [19] [20 <./andere_bilder/0_bulk_-12_10.pdf> <./andere_bilder/4_bulk_-12_10.p
+df> <./andere_bilder/10_bulk_-12_10.pdf> <./andere_bilder/bulk_-12_10.pdf>] [21
  <./Te_and_Hg_termination/no_H_bulk+4_layers_no_dos_-2_2.pdf> <./Te_and_Hg_term
 ination/bulk+4_layers_no_dos_-2_2.pdf> <./Te_and_Hg_termination/no_H_bulk+8_lay
 ers_no_dos_-2_2.pdf> <./Te_and_Hg_termination/bulk+8_layers_no_dos_-2_2.pdf> <.
 /Te_and_Hg_termination/no_H_bulk+16_layers_no_dos_-2_2.pdf> <./Te_and_Hg_termin
-ation/bulk+16_layers_no_dos_-2_2.pdf>] [23 <./Te_termination/no_H_bulk+5_layers
+ation/bulk+16_layers_no_dos_-2_2.pdf>] [22 <./Te_termination/no_H_bulk+5_layers
 _no_dos_-2_2.pdf> <./Te_termination/bulk+5_layers_no_dos_-2_2.pdf> <./Te_termin
 ation/no_H_bulk+9_layers_no_dos_-2_2.pdf> <./Te_termination/bulk+9_layers_no_do
 s_-2_2.pdf> <./Te_termination/no_H_bulk+17_layers_no_dos_-2_2.pdf> <./Te_termin
-ation/bulk+17_layers_no_dos_-2_2.pdf>] [24 <./Hg_termination/no_H_bulk+5_layers
+ation/bulk+17_layers_no_dos_-2_2.pdf>] [23 <./Hg_termination/no_H_bulk+5_layers
 _no_dos_-2_2.pdf> <./Hg_termination/bulk+5_layers_no_dos_-2_2.pdf> <./Hg_termin
 ation/no_H_bulk+9_layers_no_dos_-2_2.pdf> <./Hg_termination/bulk+9_layers_no_do
 s_-2_2.pdf> <./Hg_termination/no_H_bulk+17_layers_no_dos_-2_2.pdf> <./Hg_termin
@@ -1535,15 +1537,15 @@ LaTeX Warning: Command \r invalid in math mode on input line 9.
 
 LaTeX Warning: Command \r invalid in math mode on input line 9.
 
-[25]) [26] [27]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 143.
- [28]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 143.
+[24]) [25] [26]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 148.
+ [27]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 148.
  (./main_BA2.0.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 143.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 143.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 148.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 148.
 Package rerunfilecheck Info: File `main_BA2.0.out' has not changed.
-(rerunfilecheck)             Checksum: 557F54609CCB4FC02F3D3F4F45306FA4;1924.
+(rerunfilecheck)             Checksum: 4CBE31469E0B81B5CF942F13A8E4766A;1924.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1551,13 +1553,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package logreq Info: Writing requests to 'main_BA2.0.run.xml'.
 \openout1 = `main_BA2.0.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 143.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 148.
  )
 (\end occurred when \iftrue on line 6 was incomplete) 
 Here is how much of TeX's memory you used:
- 15214 strings out of 493029
- 248553 string characters out of 6136233
- 485494 words of memory out of 5000000
+ 15213 strings out of 493029
+ 248495 string characters out of 6136233
+ 486494 words of memory out of 5000000
  18299 multiletter control sequences out of 15000+600000
  90256 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1580,10 +1582,10 @@ type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb
 ></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/typ
 e1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main_BA2.0.pdf (31 pages, 11587238 bytes).
+Output written on main_BA2.0.pdf (30 pages, 10903663 bytes).
 PDF statistics:
- 998 PDF objects out of 1000 (max. 8388607)
- 790 compressed objects within 8 object streams
- 132 named destinations out of 1000 (max. 500000)
+ 1000 PDF objects out of 1000 (max. 8388607)
+ 793 compressed objects within 8 object streams
+ 131 named destinations out of 1000 (max. 500000)
  396 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.15)  22 MAR 2017 23:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.15)  24 MAR 2017 12:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -14,30 +14,9 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.1 \begin{frame}{Introduction}
-                               \section{Introduction}
+                               
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
-
-Missing character: There is no I in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
-! Undefined control sequence.
-l.1 \begin{frame}{Introduction}\section
-                                       {Introduction}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
 Missing character: There is no I in font nullfont!
 Missing character: There is no n in font nullfont!
@@ -1187,9 +1166,55 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 25--29
-[]
- []
+! LaTeX Error: Environment columns undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 	\begin{columns}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment column undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 		\begin{column}
+                     <6->{\linewidth}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no < in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no > in font nullfont!
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.30 		\begin{column}<6->{\linewidth}
+                                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.30 		\begin{column}<6->{\linewidth}
+                                     
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
 
 Missing character: There is no C in font nullfont!
 Missing character: There is no a in font nullfont!
@@ -1266,13 +1291,39 @@ Missing character: There is no m in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
+! LaTeX Error: \begin{document} ended by \end{column}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 		\end{column}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: \begin{document} ended by \end{columns}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 	\end{columns}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
 ! LaTeX Error: Environment columns undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.32 	\begin{columns}
+l.34 	\begin{columns}
                      <6->
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1289,7 +1340,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.33 		\begin{column}
+l.35 		\begin{column}
                      {0.1\linewidth}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1301,7 +1352,7 @@ Missing character: There is no 1 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.33 		\begin{column}{0.1\linewidth}
+l.35 		\begin{column}{0.1\linewidth}
                                     
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1310,7 +1361,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.33 		\begin{column}{0.1\linewidth}
+l.35 		\begin{column}{0.1\linewidth}
                                     
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1320,7 +1371,7 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 ! Undefined control sequence.
-l.35 			$0.5 \unit
+l.37 			$0.5 \unit
                   {nm}~\approx$
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1335,7 +1386,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.36 		\end{column}
+l.38 		\end{column}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1348,7 +1399,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.37 		\begin{column}
+l.39 		\begin{column}
                      {0.8\linewidth}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1360,7 +1411,7 @@ Missing character: There is no 8 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.37 		\begin{column}{0.8\linewidth}
+l.39 		\begin{column}{0.8\linewidth}
                                     
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1369,7 +1420,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.37 		\begin{column}{0.8\linewidth}
+l.39 		\begin{column}{0.8\linewidth}
                                     
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1379,7 +1430,7 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 ! Undefined control sequence.
-l.38 			\includegraphics
+l.40 			\includegraphics
                         [width=\linewidth]{extrabilder_fuer_vortrag/Introduc...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1397,7 +1448,7 @@ Missing character: There is no = in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.38 			\includegraphics[width=\linewidth]
+l.40 			\includegraphics[width=\linewidth]
                                           {extrabilder_fuer_vortrag/Introduc...
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1406,7 +1457,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.38 			\includegraphics[width=\linewidth]
+l.40 			\includegraphics[width=\linewidth]
                                           {extrabilder_fuer_vortrag/Introduc...
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1430,13 +1481,13 @@ Missing character: There is no r in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.38 ...udegraphics[width=\linewidth]{extrabilder_
+l.40 ...udegraphics[width=\linewidth]{extrabilder_
                                                   fuer_vortrag/Introduction2...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.38 ...xtrabilder_fuer_vortrag/Introduction2.jpg}
+l.40 ...xtrabilder_fuer_vortrag/Introduction2.jpg}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1451,7 +1502,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.39 		\end{column}
+l.41 		\end{column}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1460,7 +1511,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.39 		\end{column}
+l.41 		\end{column}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1471,7 +1522,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.39 		\end{column}
+l.41 		\end{column}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1486,7 +1537,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.41 		\begin{column}
+l.43 		\begin{column}
                      {0.1\linewidth}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1498,7 +1549,7 @@ Missing character: There is no 1 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.41 		\begin{column}{0.1\linewidth}
+l.43 		\begin{column}{0.1\linewidth}
                                     
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1507,7 +1558,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.41 		\begin{column}{0.1\linewidth}
+l.43 		\begin{column}{0.1\linewidth}
                                     
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1517,7 +1568,7 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 ! Undefined control sequence.
-l.43 			$\approx~2.7 \unit
+l.45 			$\approx~2.7 \unit
                           {nm}$
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1532,7 +1583,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.44 		\end{column}
+l.46 		\end{column}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1545,14 +1596,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.45 	\end{columns}
+l.47 	\end{columns}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Undefined control sequence.
-l.46 	\note
+l.48 	\note
            {The calculations I performed were ab-initio calculations and the...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1752,7 +1803,7 @@ Missing character: There is no m in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-l.47 	\note
+l.49 	\note
            {HgTe was examined in thin films from approximately 0.5 nm to 2.7...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2189,7 +2240,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.49 	\begin{block}
+l.51 	\begin{block}
                    <7->{}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2266,7 +2317,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.51 	\end{block}
+l.53 	\end{block}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2279,7 +2330,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.52 \end{frame}
+l.54 \end{frame}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2288,24 +2339,29 @@ or  <return>  to continue without it.
 ! Extra \endgroup.
 <recently read> \endgroup 
                           
-l.52 \end{frame}
+l.54 \end{frame}
                 
 Things are pretty mixed up, but I think the worst is over.
 
 
-Overfull \hbox (38.11581pt too wide) in paragraph at lines 32--53
+Overfull \hbox (20.0pt too wide) in paragraph at lines 25--55
+[]
+ []
+
+
+Overfull \hbox (38.11581pt too wide) in paragraph at lines 25--55
 \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 5[] [] \OMS/cmsy/m/n/10 ^^Y$
 
  []
 
 
-Overfull \hbox (138.50058pt too wide) in paragraph at lines 32--53
+Overfull \hbox (138.50058pt too wide) in paragraph at lines 25--55
 []\OML/cmm/m/it/10 uer[]ortrag=Introduction\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 :j
 pg$
  []
 
 
-Overfull \hbox (38.11581pt too wide) in paragraph at lines 32--53
+Overfull \hbox (38.11581pt too wide) in paragraph at lines 25--55
 \OMS/cmsy/m/n/10 ^^Y  []\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 7[]$
 
  []
