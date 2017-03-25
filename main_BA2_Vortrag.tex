@@ -8,6 +8,7 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{multimedia}
+\usepackage{setspace}
 \usepackage{braket}
 \usepackage[ugly]{units}
 %\usepackage{placeins}
@@ -24,7 +25,9 @@
 %		\end{minipage}
 %	}}
 \renewcommand{\note}[1]{\orignote{\scriptsize{
-			#1
+			\begin{singlespace}
+				#1
+			\end{singlespace}
 			}}}
 
 \title{Evolution of topological surface states of thin HgTe-films with film thickness}
