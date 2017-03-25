@@ -1,0 +1,56 @@
+\frametitle{Projected bulk band structure (PBBS)}
+Making 40 2D Brillouin zone slices of the bulk from $k_z=0$ to $k_z=k_{z,\text{max}}$ where $k_{z,\text{max}}=\frac{\pi}{a}$. Input example:
+	\vspace{-.3cm}
+	\begin{columns}
+		\begin{column}<2->{\linewidth}\scriptsize{
+			\begin{verbatim}
+			output band 0.5   0.0   0.01175   0.0   0.0   0.01175    80  J     Gamma
+			output band 0.0   0.0   0.01175   0.5   0.5   0.01175    80  Gamma K
+			output band 0.5   0.5   0.01175   0.5   0.0   0.01175    80  K     J
+			\end{verbatim} }
+		\end{column}
+	\end{columns}
+	\begin{columns}<3->
+		\begin{column}{.165\linewidth} \scriptsize{
+				$k_z=0$}
+		\end{column} \hspace{-.5cm}
+		\begin{column}{.33\linewidth}
+%		\begin{figure}[c]{\linewidth}
+			\centering
+			\includegraphics[width=\linewidth]{andere_bilder/0_bulk_-12_10.pdf}
+%			\caption{PBBS for $k_z$ is equal to zero.}
+%		\end{figure}
+		\end{column}
+		\begin{column}{.33\linewidth}
+%		\begin{figure}[c]{\linewidth}
+			\centering
+			\includegraphics[width=\linewidth]{andere_bilder/4_bulk_-12_10.pdf}
+%			\caption{Ensemble for PBBS for $k_z$ having values from 0 to $1/10\cdot k_{z,\text{max}}$}
+%		\end{figure}
+		\end{column}
+		\begin{column}{.165\linewidth} \scriptsize{
+			${k_z=0}$ to ${1/10\cdot k_{z,\text{max}}}$ }
+		\end{column}
+	\end{columns}
+	\begin{columns}
+		\begin{column}{.165\linewidth} \scriptsize{
+				${k_z=0}$ to ${1/4\cdot k_{z,\text{max}}}$ }
+		\end{column} \hspace{-.5cm}
+		\begin{column}{.33\linewidth}
+%		\begin{figure}[c]{\linewidth}
+			\centering
+			\includegraphics[width=\linewidth]{andere_bilder/10_bulk_-12_10.pdf}
+%			\caption{Ensemble for PBBS for $k_z$ having values from 0 to $1/4\cdot k_{z,\text{max}}$}
+%		\end{figure}
+		\end{column}
+		\begin{column}{.33\linewidth}
+%		\begin{figure}[c]{\linewidth}
+			\centering
+			\includegraphics[width=\linewidth]{andere_bilder/bulk_-12_10.pdf}
+%			\caption{Whole PBBS for all the values of $k_z$ going from 0 to $k_{z,\text{max}}$}
+%		\end{figure}
+		\end{column}
+		\begin{column}{.165\linewidth} \scriptsize{
+				${k_z=0}$ to $k_{z,\text{max}}$ }
+		\end{column}
+	\end{columns}
