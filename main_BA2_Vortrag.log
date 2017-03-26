@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.15)  26 MAR 2017 14:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.15)  26 MAR 2017 21:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1225,6 +1225,9 @@ Package: nicefrac 1998/08/04 v0.9b Nice fractions
 \L@UnitsRaiseScriptstyle=\skip69
 LaTeX Info: Redefining \nicefrac on input line 131.
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2016/03/03 v3.3 programmable bibliographies (PK/JW/AB)
 
@@ -1579,6 +1582,11 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with 'top_surf_states':
 (biblatex)                - Invalid format of field 'month'.
 
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'HgTe_structure_001':
+(biblatex)                - Invalid format of field 'month'.
+
 )
 Package biblatex Info: Reference section=0 on input line 39.
 Package biblatex Info: Reference segment=0 on input line 39.
@@ -1683,84 +1691,54 @@ Package pdftex.def Info: andere_bilder/band_structure_top_insulator.jpg used on
  <./andere_bilder/band_structure_top_insulator.jpg>] [8
 
 ]
-<andere_bilder/zinc_blende.jpg, id=120, 521.95pt x 485.815pt>
-File: andere_bilder/zinc_blende.jpg Graphic file (type jpg)
-
-<use andere_bilder/zinc_blende.jpg>
-Package pdftex.def Info: andere_bilder/zinc_blende.jpg used on input line 110.
-(pdftex.def)             Requested size: 76.82246pt x 71.49771pt.
-
-Overfull \hbox (3.6088pt too wide) in paragraph at lines 110--110
-[] 
- []
-
-
-<extrabilder_fuer_vortrag/millersche_indizes_001.png, id=121, 506.89375pt x 520
-.94624pt>
-File: extrabilder_fuer_vortrag/millersche_indizes_001.png Graphic file (type pn
-g)
- <use extrabilder_fuer_vortrag/millersche_indizes_001.png>
-Package pdftex.def Info: extrabilder_fuer_vortrag/millersche_indizes_001.png us
-ed on input line 110.
-(pdftex.def)             Requested size: 76.82246pt x 78.94936pt.
-
-Overfull \vbox (5.68555pt too high) detected at line 110
- []
-
-[9
-
- <./andere_bilder/zinc_blende.jpg> <./extrabilder_fuer_vortrag/millersche_indiz
-es_001.png>] [10
-
-]
-<andere_bilder/zinc_blende_45degree.jpg, id=142, 446.66875pt x 408.52625pt>
+<andere_bilder/zinc_blende_45degree.jpg, id=120, 446.66875pt x 408.52625pt>
 File: andere_bilder/zinc_blende_45degree.jpg Graphic file (type jpg)
 
 <use andere_bilder/zinc_blende_45degree.jpg>
 Package pdftex.def Info: andere_bilder/zinc_blende_45degree.jpg used on input l
-ine 169.
+ine 151.
 (pdftex.def)             Requested size: 92.18672pt x 84.30945pt.
 
-Overfull \hbox (15.36426pt too wide) in paragraph at lines 169--169
+Overfull \hbox (15.36426pt too wide) in paragraph at lines 151--151
 [][]  
  []
 
 
-Overfull \hbox (27.25403pt too wide) in paragraph at lines 169--169
+Overfull \hbox (27.25403pt too wide) in paragraph at lines 151--151
 [] 
  []
 
 
-Overfull \hbox (10.47795pt too wide) in paragraph at lines 169--169
+Overfull \hbox (10.47795pt too wide) in paragraph at lines 151--151
 [] 
  []
 
-<andere_bilder/brillouin_zone_001_2.jpg, id=143, 433.62pt x 444.66125pt>
+[9
+
+ <./andere_bilder/zinc_blende_45degree.jpg>] [10
+
+]
+<andere_bilder/brillouin_zone_001_2.jpg, id=140, 433.62pt x 444.66125pt>
 File: andere_bilder/brillouin_zone_001_2.jpg Graphic file (type jpg)
 
 <use andere_bilder/brillouin_zone_001_2.jpg>
 Package pdftex.def Info: andere_bilder/brillouin_zone_001_2.jpg used on input l
-ine 169.
-(pdftex.def)             Requested size: 122.91406pt x 126.0377pt.
+ine 174.
+(pdftex.def)             Requested size: 138.2795pt x 141.7992pt.
+ [11
 
-Overfull \vbox (9.69763pt too high) detected at line 169
- []
-
-[11
-
- <./andere_bilder/zinc_blende_45degree.jpg> <./andere_bilder/brillouin_zone_001
-_2.jpg>] [12
+ <./andere_bilder/brillouin_zone_001_2.jpg>] [12
 
 ]
-<andere_bilder/hgte_16layer_supercell_2.jpg, id=158, 172.645pt x 903.375pt>
+<andere_bilder/hgte_16layer_supercell_2.jpg, id=154, 172.645pt x 903.375pt>
 File: andere_bilder/hgte_16layer_supercell_2.jpg Graphic file (type jpg)
 
 <use andere_bilder/hgte_16layer_supercell_2.jpg>
 Package pdftex.def Info: andere_bilder/hgte_16layer_supercell_2.jpg used on inp
-ut line 198.
+ut line 203.
 (pdftex.def)             Requested size: 43.02039pt x 225.09883pt.
 
-Overfull \vbox (7.11182pt too high) detected at line 198
+Overfull \vbox (7.11182pt too high) detected at line 203
  []
 
 [13
@@ -1768,7 +1746,7 @@ Overfull \vbox (7.11182pt too high) detected at line 198
  <./andere_bilder/hgte_16layer_supercell_2.jpg>] [14
 
 ]
-Overfull \vbox (4.52744pt too high) detected at line 231
+Overfull \vbox (4.52744pt too high) detected at line 236
  []
 
 [15
@@ -1780,7 +1758,7 @@ Overfull \vbox (4.52744pt too high) detected at line 231
 ] [18
 
 ]) (./results_vortrag.tex
-<andere_bilder/plot_energies_hgte_bulk_all_kgrid_in_one.pdf, id=202, 642.4pt x 
+<andere_bilder/plot_energies_hgte_bulk_all_kgrid_in_one.pdf, id=198, 642.4pt x 
 481.8pt>
 File: andere_bilder/plot_energies_hgte_bulk_all_kgrid_in_one.pdf Graphic file (
 type pdf)
@@ -1789,7 +1767,7 @@ Package pdftex.def Info: andere_bilder/plot_energies_hgte_bulk_all_kgrid_in_one
 .pdf used on input line 19.
 (pdftex.def)             Requested size: 147.49782pt x 110.62051pt.
 
-<andere_bilder/lattice_constant_study_spin_none_no_soc.pdf, id=203, 642.4pt x 4
+<andere_bilder/lattice_constant_study_spin_none_no_soc.pdf, id=199, 642.4pt x 4
 81.8pt>
 File: andere_bilder/lattice_constant_study_spin_none_no_soc.pdf Graphic file (t
 ype pdf)
@@ -1807,14 +1785,14 @@ LaTeX Warning: Command \r invalid in math mode on input line 19.
 r/lattice_constant_study_spin_none_no_soc.pdf>] [20
 
 ]
-<andere_bilder/kgrid_bulk.pdf, id=235, 642.4pt x 481.8pt>
+<andere_bilder/kgrid_bulk.pdf, id=231, 642.4pt x 481.8pt>
 File: andere_bilder/kgrid_bulk.pdf Graphic file (type pdf)
 
 <use andere_bilder/kgrid_bulk.pdf>
 Package pdftex.def Info: andere_bilder/kgrid_bulk.pdf used on input line 55.
 (pdftex.def)             Requested size: 122.91406pt x 92.18254pt.
 
-<andere_bilder/kgrid_1x1x4_layers.pdf, id=236, 642.4pt x 481.8pt>
+<andere_bilder/kgrid_1x1x4_layers.pdf, id=232, 642.4pt x 481.8pt>
 File: andere_bilder/kgrid_1x1x4_layers.pdf Graphic file (type pdf)
 
 <use andere_bilder/kgrid_1x1x4_layers.pdf>
@@ -1822,7 +1800,7 @@ Package pdftex.def Info: andere_bilder/kgrid_1x1x4_layers.pdf used on input lin
 e 55.
 (pdftex.def)             Requested size: 122.91406pt x 92.18254pt.
 
-<andere_bilder/kgrid_1x1x8_layers.pdf, id=237, 642.4pt x 481.8pt>
+<andere_bilder/kgrid_1x1x8_layers.pdf, id=233, 642.4pt x 481.8pt>
 File: andere_bilder/kgrid_1x1x8_layers.pdf Graphic file (type pdf)
 
 <use andere_bilder/kgrid_1x1x8_layers.pdf>
@@ -1830,7 +1808,7 @@ Package pdftex.def Info: andere_bilder/kgrid_1x1x8_layers.pdf used on input lin
 e 55.
 (pdftex.def)             Requested size: 122.91406pt x 92.18254pt.
 
-<andere_bilder/kgrid_1x1x16_layers.pdf, id=238, 642.4pt x 481.8pt>
+<andere_bilder/kgrid_1x1x16_layers.pdf, id=234, 642.4pt x 481.8pt>
 File: andere_bilder/kgrid_1x1x16_layers.pdf Graphic file (type pdf)
 
 <use andere_bilder/kgrid_1x1x16_layers.pdf>
@@ -1852,7 +1830,7 @@ LaTeX Font Info:    Try loading font information for T1+lmtt on input line 6.
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<andere_bilder/0_bulk_-12_10.pdf, id=288, 642.4pt x 481.8pt>
+<andere_bilder/0_bulk_-12_10.pdf, id=284, 642.4pt x 481.8pt>
 File: andere_bilder/0_bulk_-12_10.pdf Graphic file (type pdf)
 
 <use andere_bilder/0_bulk_-12_10.pdf>
@@ -1860,7 +1838,7 @@ Package pdftex.def Info: andere_bilder/0_bulk_-12_10.pdf used on input line 20.
 
 (pdftex.def)             Requested size: 101.40622pt x 76.05298pt.
 
-<andere_bilder/4_bulk_-12_10.pdf, id=289, 642.4pt x 481.8pt>
+<andere_bilder/4_bulk_-12_10.pdf, id=285, 642.4pt x 481.8pt>
 File: andere_bilder/4_bulk_-12_10.pdf Graphic file (type pdf)
 
 <use andere_bilder/4_bulk_-12_10.pdf>
@@ -1868,7 +1846,7 @@ Package pdftex.def Info: andere_bilder/4_bulk_-12_10.pdf used on input line 27.
 
 (pdftex.def)             Requested size: 101.40622pt x 76.05298pt.
 
-<andere_bilder/10_bulk_-12_10.pdf, id=290, 642.4pt x 481.8pt>
+<andere_bilder/10_bulk_-12_10.pdf, id=286, 642.4pt x 481.8pt>
 File: andere_bilder/10_bulk_-12_10.pdf Graphic file (type pdf)
 
 <use andere_bilder/10_bulk_-12_10.pdf>
@@ -1876,7 +1854,7 @@ Package pdftex.def Info: andere_bilder/10_bulk_-12_10.pdf used on input line 42
 .
 (pdftex.def)             Requested size: 101.40622pt x 76.05298pt.
 
-<andere_bilder/bulk_-12_10.pdf, id=291, 642.4pt x 481.8pt>
+<andere_bilder/bulk_-12_10.pdf, id=287, 642.4pt x 481.8pt>
 File: andere_bilder/bulk_-12_10.pdf Graphic file (type pdf)
 
 <use andere_bilder/bulk_-12_10.pdf>
@@ -1888,56 +1866,56 @@ Package pdftex.def Info: andere_bilder/bulk_-12_10.pdf used on input line 49.
 ere_bilder/10_bulk_-12_10.pdf> <./andere_bilder/bulk_-12_10.pdf>] [24
 
 ]
-<Te_and_Hg_termination/no_H_bulk+4_layers_no_dos_-2_2.pdf, id=367, 642.4pt x 48
+<Te_and_Hg_termination/no_H_bulk+4_layers_no_dos_-2_2.pdf, id=363, 642.4pt x 48
 1.8pt>
 File: Te_and_Hg_termination/no_H_bulk+4_layers_no_dos_-2_2.pdf Graphic file (ty
 pe pdf)
  <use Te_and_Hg_termination/no_H_bulk+4_layers_no_dos_-2_2.pdf>
 Package pdftex.def Info: Te_and_Hg_termination/no_H_bulk+4_layers_no_dos_-2_2.p
-df used on input line 170.
+df used on input line 175.
 (pdftex.def)             Requested size: 104.47742pt x 78.35405pt.
 
-<Te_termination/no_H_bulk+5_layers_no_dos_-2_2.pdf, id=368, 642.4pt x 481.8pt>
+<Te_termination/no_H_bulk+5_layers_no_dos_-2_2.pdf, id=364, 642.4pt x 481.8pt>
 File: Te_termination/no_H_bulk+5_layers_no_dos_-2_2.pdf Graphic file (type pdf)
 
 
 <use Te_termination/no_H_bulk+5_layers_no_dos_-2_2.pdf>
 Package pdftex.def Info: Te_termination/no_H_bulk+5_layers_no_dos_-2_2.pdf used
- on input line 170.
+ on input line 175.
 (pdftex.def)             Requested size: 104.47742pt x 78.35405pt.
 
-<Hg_termination/no_H_bulk+5_layers_no_dos_-2_2.pdf, id=369, 642.4pt x 481.8pt>
+<Hg_termination/no_H_bulk+5_layers_no_dos_-2_2.pdf, id=365, 642.4pt x 481.8pt>
 File: Hg_termination/no_H_bulk+5_layers_no_dos_-2_2.pdf Graphic file (type pdf)
 
 
 <use Hg_termination/no_H_bulk+5_layers_no_dos_-2_2.pdf>
 Package pdftex.def Info: Hg_termination/no_H_bulk+5_layers_no_dos_-2_2.pdf used
- on input line 170.
+ on input line 175.
 (pdftex.def)             Requested size: 104.47742pt x 78.35405pt.
 
-<Te_and_Hg_termination/bulk+4_layers_no_dos_-2_2.pdf, id=370, 642.4pt x 481.8pt
+<Te_and_Hg_termination/bulk+4_layers_no_dos_-2_2.pdf, id=366, 642.4pt x 481.8pt
 >
 File: Te_and_Hg_termination/bulk+4_layers_no_dos_-2_2.pdf Graphic file (type pd
 f)
  <use Te_and_Hg_termination/bulk+4_layers_no_dos_-2_2.pdf>
 Package pdftex.def Info: Te_and_Hg_termination/bulk+4_layers_no_dos_-2_2.pdf us
-ed on input line 170.
+ed on input line 175.
 (pdftex.def)             Requested size: 104.47742pt x 78.35405pt.
 
-<Te_termination/bulk+5_layers_no_dos_-2_2.pdf, id=371, 642.4pt x 481.8pt>
+<Te_termination/bulk+5_layers_no_dos_-2_2.pdf, id=367, 642.4pt x 481.8pt>
 File: Te_termination/bulk+5_layers_no_dos_-2_2.pdf Graphic file (type pdf)
 
 <use Te_termination/bulk+5_layers_no_dos_-2_2.pdf>
 Package pdftex.def Info: Te_termination/bulk+5_layers_no_dos_-2_2.pdf used on i
-nput line 170.
+nput line 175.
 (pdftex.def)             Requested size: 104.47742pt x 78.35405pt.
 
-<Hg_termination/bulk+5_layers_no_dos_-2_2.pdf, id=372, 642.4pt x 481.8pt>
+<Hg_termination/bulk+5_layers_no_dos_-2_2.pdf, id=368, 642.4pt x 481.8pt>
 File: Hg_termination/bulk+5_layers_no_dos_-2_2.pdf Graphic file (type pdf)
 
 <use Hg_termination/bulk+5_layers_no_dos_-2_2.pdf>
 Package pdftex.def Info: Hg_termination/bulk+5_layers_no_dos_-2_2.pdf used on i
-nput line 170.
+nput line 175.
 (pdftex.def)             Requested size: 104.47742pt x 78.35405pt.
  [25
 
@@ -1945,122 +1923,140 @@ nput line 170.
 /no_H_bulk+5_layers_no_dos_-2_2.pdf> <./Hg_termination/no_H_bulk+5_layers_no_do
 s_-2_2.pdf> <./Te_and_Hg_termination/bulk+4_layers_no_dos_-2_2.pdf> <./Te_termi
 nation/bulk+5_layers_no_dos_-2_2.pdf> <./Hg_termination/bulk+5_layers_no_dos_-2
-_2.pdf>]
-<Te_and_Hg_termination/no_H_bulk+8_layers_no_dos_-2_2.pdf, id=470, 642.4pt x 48
+_2.pdf>] [26
+
+]
+<Te_and_Hg_termination/no_H_bulk+8_layers_no_dos_-2_2.pdf, id=474, 642.4pt x 48
 1.8pt>
 File: Te_and_Hg_termination/no_H_bulk+8_layers_no_dos_-2_2.pdf Graphic file (ty
 pe pdf)
  <use Te_and_Hg_termination/no_H_bulk+8_layers_no_dos_-2_2.pdf>
 Package pdftex.def Info: Te_and_Hg_termination/no_H_bulk+8_layers_no_dos_-2_2.p
-df used on input line 224.
+df used on input line 229.
 (pdftex.def)             Requested size: 104.47742pt x 78.35405pt.
 
-<Te_termination/no_H_bulk+9_layers_no_dos_-2_2.pdf, id=471, 642.4pt x 481.8pt>
+<Te_termination/no_H_bulk+9_layers_no_dos_-2_2.pdf, id=475, 642.4pt x 481.8pt>
 File: Te_termination/no_H_bulk+9_layers_no_dos_-2_2.pdf Graphic file (type pdf)
 
 
 <use Te_termination/no_H_bulk+9_layers_no_dos_-2_2.pdf>
 Package pdftex.def Info: Te_termination/no_H_bulk+9_layers_no_dos_-2_2.pdf used
- on input line 224.
+ on input line 229.
 (pdftex.def)             Requested size: 104.47742pt x 78.35405pt.
 
-<Hg_termination/no_H_bulk+9_layers_no_dos_-2_2.pdf, id=472, 642.4pt x 481.8pt>
+<Hg_termination/no_H_bulk+9_layers_no_dos_-2_2.pdf, id=476, 642.4pt x 481.8pt>
 File: Hg_termination/no_H_bulk+9_layers_no_dos_-2_2.pdf Graphic file (type pdf)
 
 
 <use Hg_termination/no_H_bulk+9_layers_no_dos_-2_2.pdf>
 Package pdftex.def Info: Hg_termination/no_H_bulk+9_layers_no_dos_-2_2.pdf used
- on input line 224.
+ on input line 229.
 (pdftex.def)             Requested size: 104.47742pt x 78.35405pt.
 
-<Te_and_Hg_termination/bulk+8_layers_no_dos_-2_2.pdf, id=473, 642.4pt x 481.8pt
+<Te_and_Hg_termination/bulk+8_layers_no_dos_-2_2.pdf, id=477, 642.4pt x 481.8pt
 >
 File: Te_and_Hg_termination/bulk+8_layers_no_dos_-2_2.pdf Graphic file (type pd
 f)
  <use Te_and_Hg_termination/bulk+8_layers_no_dos_-2_2.pdf>
 Package pdftex.def Info: Te_and_Hg_termination/bulk+8_layers_no_dos_-2_2.pdf us
-ed on input line 224.
+ed on input line 229.
 (pdftex.def)             Requested size: 104.47742pt x 78.35405pt.
 
-<Te_termination/bulk+9_layers_no_dos_-2_2.pdf, id=474, 642.4pt x 481.8pt>
+<Te_termination/bulk+9_layers_no_dos_-2_2.pdf, id=478, 642.4pt x 481.8pt>
 File: Te_termination/bulk+9_layers_no_dos_-2_2.pdf Graphic file (type pdf)
 
 <use Te_termination/bulk+9_layers_no_dos_-2_2.pdf>
 Package pdftex.def Info: Te_termination/bulk+9_layers_no_dos_-2_2.pdf used on i
-nput line 224.
+nput line 229.
 (pdftex.def)             Requested size: 104.47742pt x 78.35405pt.
 
-<Hg_termination/bulk+9_layers_no_dos_-2_2.pdf, id=475, 642.4pt x 481.8pt>
+<Hg_termination/bulk+9_layers_no_dos_-2_2.pdf, id=479, 642.4pt x 481.8pt>
 File: Hg_termination/bulk+9_layers_no_dos_-2_2.pdf Graphic file (type pdf)
 
 <use Hg_termination/bulk+9_layers_no_dos_-2_2.pdf>
 Package pdftex.def Info: Hg_termination/bulk+9_layers_no_dos_-2_2.pdf used on i
-nput line 224.
+nput line 229.
 (pdftex.def)             Requested size: 104.47742pt x 78.35405pt.
- [26
+ [27
 
  <./Te_and_Hg_termination/no_H_bulk+8_layers_no_dos_-2_2.pdf> <./Te_termination
 /no_H_bulk+9_layers_no_dos_-2_2.pdf> <./Hg_termination/no_H_bulk+9_layers_no_do
 s_-2_2.pdf> <./Te_and_Hg_termination/bulk+8_layers_no_dos_-2_2.pdf> <./Te_termi
 nation/bulk+9_layers_no_dos_-2_2.pdf> <./Hg_termination/bulk+9_layers_no_dos_-2
 _2.pdf>]
-<Te_and_Hg_termination/no_H_bulk+16_layers_no_dos_-2_2.pdf, id=571, 642.4pt x 4
+<Te_and_Hg_termination/no_H_bulk+16_layers_no_dos_-2_2.pdf, id=575, 642.4pt x 4
 81.8pt>
 File: Te_and_Hg_termination/no_H_bulk+16_layers_no_dos_-2_2.pdf Graphic file (t
 ype pdf)
  <use Te_and_Hg_termination/no_H_bulk+16_layers_no_dos_-2_2.pdf>
 Package pdftex.def Info: Te_and_Hg_termination/no_H_bulk+16_layers_no_dos_-2_2.
-pdf used on input line 278.
+pdf used on input line 283.
 (pdftex.def)             Requested size: 104.47742pt x 78.35405pt.
 
-<Te_termination/no_H_bulk+17_layers_no_dos_-2_2.pdf, id=572, 642.4pt x 481.8pt>
+<Te_termination/no_H_bulk+17_layers_no_dos_-2_2.pdf, id=576, 642.4pt x 481.8pt>
 File: Te_termination/no_H_bulk+17_layers_no_dos_-2_2.pdf Graphic file (type pdf
 )
 <use Te_termination/no_H_bulk+17_layers_no_dos_-2_2.pdf>
 Package pdftex.def Info: Te_termination/no_H_bulk+17_layers_no_dos_-2_2.pdf use
-d on input line 278.
+d on input line 283.
 (pdftex.def)             Requested size: 104.47742pt x 78.35405pt.
 
-<Hg_termination/no_H_bulk+17_layers_no_dos_-2_2.pdf, id=573, 642.4pt x 481.8pt>
+<Hg_termination/no_H_bulk+17_layers_no_dos_-2_2.pdf, id=577, 642.4pt x 481.8pt>
 File: Hg_termination/no_H_bulk+17_layers_no_dos_-2_2.pdf Graphic file (type pdf
 )
 <use Hg_termination/no_H_bulk+17_layers_no_dos_-2_2.pdf>
 Package pdftex.def Info: Hg_termination/no_H_bulk+17_layers_no_dos_-2_2.pdf use
-d on input line 278.
+d on input line 283.
 (pdftex.def)             Requested size: 104.47742pt x 78.35405pt.
 
-<Te_and_Hg_termination/bulk+16_layers_no_dos_-2_2.pdf, id=574, 642.4pt x 481.8p
+<Te_and_Hg_termination/bulk+16_layers_no_dos_-2_2.pdf, id=578, 642.4pt x 481.8p
 t>
 File: Te_and_Hg_termination/bulk+16_layers_no_dos_-2_2.pdf Graphic file (type p
 df)
  <use Te_and_Hg_termination/bulk+16_layers_no_dos_-2_2.pdf>
 Package pdftex.def Info: Te_and_Hg_termination/bulk+16_layers_no_dos_-2_2.pdf u
-sed on input line 278.
+sed on input line 283.
 (pdftex.def)             Requested size: 104.47742pt x 78.35405pt.
 
-<Te_termination/bulk+17_layers_no_dos_-2_2.pdf, id=575, 642.4pt x 481.8pt>
+<Te_termination/bulk+17_layers_no_dos_-2_2.pdf, id=579, 642.4pt x 481.8pt>
 File: Te_termination/bulk+17_layers_no_dos_-2_2.pdf Graphic file (type pdf)
 
 <use Te_termination/bulk+17_layers_no_dos_-2_2.pdf>
 Package pdftex.def Info: Te_termination/bulk+17_layers_no_dos_-2_2.pdf used on 
-input line 278.
+input line 283.
 (pdftex.def)             Requested size: 104.47742pt x 78.35405pt.
 
-<Hg_termination/bulk+17_layers_no_dos_-2_2.pdf, id=576, 642.4pt x 481.8pt>
+<Hg_termination/bulk+17_layers_no_dos_-2_2.pdf, id=580, 642.4pt x 481.8pt>
 File: Hg_termination/bulk+17_layers_no_dos_-2_2.pdf Graphic file (type pdf)
 
 <use Hg_termination/bulk+17_layers_no_dos_-2_2.pdf>
 Package pdftex.def Info: Hg_termination/bulk+17_layers_no_dos_-2_2.pdf used on 
-input line 278.
+input line 283.
 (pdftex.def)             Requested size: 104.47742pt x 78.35405pt.
- [27
+ [28
 
  <./Te_and_Hg_termination/no_H_bulk+16_layers_no_dos_-2_2.pdf> <./Te_terminatio
 n/no_H_bulk+17_layers_no_dos_-2_2.pdf> <./Hg_termination/no_H_bulk+17_layers_no
 _dos_-2_2.pdf> <./Te_and_Hg_termination/bulk+16_layers_no_dos_-2_2.pdf> <./Te_t
 ermination/bulk+17_layers_no_dos_-2_2.pdf> <./Hg_termination/bulk+17_layers_no_
 dos_-2_2.pdf>])
-(./conclusion_vortrag.tex [28
+(./conclusion_vortrag.tex
+
+LaTeX Warning: Command \r invalid in math mode on input line 15.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 15.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 15.
+
+[29
+
+] [30
+
+] [31
+
+] [32
 
 ])
 \tf@nav=\write7
@@ -2086,13 +2082,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 60.
  )
 (\end occurred when \iftrue on line 39 was incomplete) 
 Here is how much of TeX's memory you used:
- 26605 strings out of 493029
- 508210 string characters out of 6136233
- 676013 words of memory out of 5000000
- 29407 multiletter control sequences out of 15000+600000
- 86454 words of font info for 78 fonts, out of 8000000 for 9000
+ 26632 strings out of 493029
+ 508477 string characters out of 6136233
+ 676794 words of memory out of 5000000
+ 29424 multiletter control sequences out of 15000+600000
+ 89238 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 81i,17n,88p,1029b,1640s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 81i,17n,88p,1075b,1640s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/e
 nc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/
 share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/
@@ -2110,10 +2106,10 @@ ts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/t
 ype1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main_BA2_Vortrag.pdf (28 pages, 10325313 bytes).
+Output written on main_BA2_Vortrag.pdf (32 pages, 10211666 bytes).
 PDF statistics:
- 762 PDF objects out of 1000 (max. 8388607)
- 545 compressed objects within 6 object streams
- 61 named destinations out of 1000 (max. 500000)
- 293 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 791 PDF objects out of 1000 (max. 8388607)
+ 568 compressed objects within 6 object streams
+ 69 named destinations out of 1000 (max. 500000)
+ 283 words of extra memory for PDF output out of 10000 (max. 10000000)
 

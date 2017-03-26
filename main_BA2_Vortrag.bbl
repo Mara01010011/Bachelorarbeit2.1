@@ -35,6 +35,49 @@
   \warn{\item Invalid format of field 'month'}
 \endentry
 
+\entry{HgTe_structure_001}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {al.}{a.}%
+     {S.-C.~Wu}{S.-C.~W.}%
+     {et}{e.}%
+     {}{}}%
+  }
+  \strng{namehash}{aSCWe1}
+  \strng{fullhash}{aSCWe1}
+  \field{sortinit}{A}
+  \verb{doi}
+  \verb 10.1209/0295-5075/107/57006
+  \endverb
+  \field{number}{57006}
+  \field{title}{Ab initio study of topological surface states of strained HgTe}
+  \field{volume}{107}
+  \field{journaltitle}{epljournal}
+  \field{year}{2014}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{lattice_constant}{incollection}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Landolt-Börnstein}{L.-B.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{LB1}
+  \strng{fullhash}{LB1}
+  \field{sortinit}{L}
+  \field{booktitle}{Numerical Data and Functional Relationships in Science and
+  Technology}
+  \field{pages}{212}
+  \field{title}{Semiconductors}
+  \field{volume}{44}
+\endentry
+
 \lossort
 \endlossort
 

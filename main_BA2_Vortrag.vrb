@@ -54,5 +54,4 @@ Making 40 slices in 2D Brillouin zone of the bulk from $k_z=0$ to $k_z=k_{z,\tex
 				${k_z=0}$ to $k_{z,\text{max}}$ }
 		\end{column}
 	\end{columns}
-	\note{
-		}
+	\note{ The bulk band structure alone is calculated along the high symmetry points in the 3D Billouin zone. But we want to compare it to the slab band structure with broken symmetry in k z direction. Therefore I used the so-called projected bulk band structure. This means I made a certain amount of slices of the 2D Brillouin zone of the bulk with k z from 0 to k z max which is pi over a. Here you can see an example of the input in the control.in  for kz is one fortieth of k z max. The first three numbers are the coordinates of the high symmetry points where the calculations begin, the fourth to sixth number are the coordinates of the point where the calculations end and 80 are the is the number of points which divides that segment of the path. These pictures show how more and more calculations are added until all results are superposed and the PBBS is complete. The last plot shows the bulk band structure regarded from k z point of view. The grey part is the bulk, the white part symbolizes the gaps. }

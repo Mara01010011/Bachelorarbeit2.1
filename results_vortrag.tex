@@ -110,8 +110,7 @@
 				${k_z=0}$ to $k_{z,\text{max}}$ }
 		\end{column}
 	\end{columns}	
-	\note{
-		}
+	\note{ The bulk band structure alone is calculated along the high symmetry points in the 3D Billouin zone. But we want to compare it to the slab band structure with broken symmetry in k z direction. Therefore I used the so-called projected bulk band structure. This means I made a certain amount of slices of the 2D Brillouin zone of the bulk with k z from 0 to k z max which is pi over a. Here you can see an example of the input in the control.in  for kz is one fortieth of k z max. The first three numbers are the coordinates of the high symmetry points where the calculations begin, the fourth to sixth number are the coordinates of the point where the calculations end and 80 are the is the number of points which divides that segment of the path. These pictures show how more and more calculations are added until all results are superposed and the PBBS is complete. The last plot shows the bulk band structure regarded from k z point of view. The grey part is the bulk, the white part symbolizes the gaps. }
 \end{frame}
 
 
@@ -167,6 +166,12 @@
 	\vspace{.3cm}
 	\footnotesize{
 	First row: without hydrogens. \\Second row: with hydrogens passivating one surface.}
+	\note{For comparing the PBBS with the slab band structure, I calculated them with the supercell approach and k z set to zero in the band output. The result is then superimposed to the PBBS. As you can see, these (point) are the plots for Te-Hg termination, these (point) for Te-Te and these for Hg-Hg termination, while in this row are all plots for calculations without hydrogens and these plots are all with hydrogens passivating one surface, in case of the Te-Hg termination, the Te surface is passivated. \\
+	There are several things one notices while comparing these plots to each other. First of all by looking at them we notice that the slab band structure is very
+	sensitive under variation of thickness and terminations: The number of bands rises for thicker slabs. Regarding the slabs with one surface passivated by hydrogens, we can see that the energy bands corresponding to the surface states are shifted away from the Fermi level. In the plots for clean terminations one can observe possible candidates for a Dirac cone (point at gamma point at Fermi level). Slab bands which are completely in the white area are the the surface states, band which are completely in the grey area are bulk bands. Only for 16 and 17 layers we can see bands which are completely in the grey and in the white area. \\
+	The surface states which are candidates for topological states must come from valence band an got to the conduction band or vice versa. Additionally one
+	can count how many times the dispersion line crosses through the Fermi level. If the
+	number of crossings is odd, then this energy band is a topological surface state. When we count those crossings, we only find trivial surface states, which brings us to the conclusion.}
 \end{frame}
 
 \begin{frame}{PBBS with 8 and 9 layer slabs}
