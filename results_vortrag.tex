@@ -13,6 +13,9 @@
 			Lattice constant $a$ with respect to the total energy. The lowest energy was found for 6.685\,$\unit{\AA}$. %\vspace{12.5pt}
 		\end{column}
 	\end{columns}
+	\note{ Let's now turn to the results. First of all I like to mention, that the input data for calculations performed by FHI-aims are the geometry.in and the control.in. The geometry.in contains the coordinates of the lattice vectors and of the atoms. The control.in contains physical settings like the exchange-correlation method, the spin treatment and the relativistic effects. It also contains convergence criteria of the self convergence cycle, the k-grid settings and Informations about all atomic species represented in the geometry.in. \\
+	Before starting the calculations for the band structure, it is recommended to do a
+	lattice constant study and a k-grid study. So let's have a look at the plot at the left. Here we see the lattice constant with respect to the total energy of the bulk calculated with different k-grids. As we can see the k-grid 3 3 3 gives no good results. The plots for 8 to 16 kgrid overlays, so 8x8x8 seems to be enough to bring physically correct results. In the right picture we see the lattice constant plot for one specific kgrid configuration. The energetically most stable constitution of a crystal structure is given by the lattice constant $a$ with the smallest total system energy, in this case, I found 6.685 Angström for the lowest energy.}
 \end{frame}
 
 \begin{frame}{lattice constant and k-grid study part 2}
@@ -47,10 +50,12 @@
 			\includegraphics[width=\linewidth]{andere_bilder/kgrid_1x1x16_layers.pdf}
 		\end{column}
 	\end{columns}
+	\note{ This lattice constant then was used for a detailed kgrid study of the bulk and slabs with 4, 8 and 16 layers. Note that for the slabs, k z was set to 1 and that E 0 is just a number different for every plot which was chosen for smaller numbers in the y axis. Since a higher kgrid recommends more computational effort, the most economic kgrid directly after the it has converged to a certain energy. That number was nearly the same for the bulk and the all slabs, namely 12. The oscillation in the plots for the slabs comes from the translation symmetry break in k z direction and therefore it is no wonder that this oscillation becomes smaller for thicker slabs.
+	The kgrid used for the following calculations was 24 since higher kgrid gives smoother bands and the additional computational effort was small.}
 \end{frame}
 
 \begin{frame}[fragile]{Projected bulk band structure (PBBS)}
-	Making 40 2D Brillouin zone slices of the bulk from $k_z=0$ to $k_z=k_{z,\text{max}}$ where $k_{z,\text{max}}=\frac{\pi}{a}$. Input example:
+	Making 40 slices in 2D Brillouin zone of the bulk from $k_z=0$ to $k_z=k_{z,\text{max}}$ where $k_{z,\text{max}}=\frac{\pi}{a}$. Input example:
 	\vspace{-.3cm}
 	\begin{columns} 
 		\begin{column}<2->{\linewidth}\scriptsize{
@@ -105,6 +110,8 @@
 				${k_z=0}$ to $k_{z,\text{max}}$ }
 		\end{column}
 	\end{columns}	
+	\note{
+		}
 \end{frame}
 
 

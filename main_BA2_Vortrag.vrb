@@ -1,5 +1,5 @@
 \frametitle{Projected bulk band structure (PBBS)}
-Making 40 2D Brillouin zone slices of the bulk from $k_z=0$ to $k_z=k_{z,\text{max}}$ where $k_{z,\text{max}}=\frac{\pi}{a}$. Input example:
+Making 40 slices in 2D Brillouin zone of the bulk from $k_z=0$ to $k_z=k_{z,\text{max}}$ where $k_{z,\text{max}}=\frac{\pi}{a}$. Input example:
 	\vspace{-.3cm}
 	\begin{columns}
 		\begin{column}<2->{\linewidth}\scriptsize{
@@ -54,3 +54,5 @@ Making 40 2D Brillouin zone slices of the bulk from $k_z=0$ to $k_z=k_{z,\text{m
 				${k_z=0}$ to $k_{z,\text{max}}$ }
 		\end{column}
 	\end{columns}
+	\note{
+		}
